@@ -1,0 +1,243 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "slideshow_4RAqrE": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_fGDq9E": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/bharti7433_1.png",
+            "mobile_image": "shopify://shop_images/bharti7433_1.png",
+            "heading": "Luxury Products",
+            "heading_size": "hxxl",
+            "subheading": "A celebration of style and heritage — find your perfect match in the world of Pabeena Collections",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_fGDq9E"
+      ],
+      "custom_css": [
+        "h2.banner__heading.inline-richtext {font-weight: 600;}",
+        ".my-slick-slideshow ul.slick-dots {display: none;}"
+      ],
+      "name": "t:sections.slideshow.presets.name",
+      "settings": {
+        "custom_class": "luxury-collection-header",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "new_multicolumn_gNyGj7": {
+      "type": "new-multicolumn",
+      "blocks": {
+        "column_YraGpc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bharti7404_2.png",
+            "title": "Mahira Regal Polki Jadau Choker",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_xcRdV8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bharti7400_2.png",
+            "title": "Mahira Regal Polki Jadau Choker",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_BVYXrV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/bharti7433_2.png",
+            "title": "Mahira Regal Polki Jadau Choker",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_phmjcf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8517_1.png",
+            "title": "Mahira Regal Polki Jadau Choker",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_T6TKA9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8521_1.png",
+            "title": "Mahira Regal Polki Jadau Choker",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        },
+        "column_e6LTqr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8540_1.png",
+            "title": "Mahira Regal Polki Jadau Choker",
+            "text": "",
+            "link_label": "",
+            "link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "column_YraGpc",
+        "column_xcRdV8",
+        "column_BVYXrV",
+        "column_phmjcf",
+        "column_T6TKA9",
+        "column_e6LTqr"
+      ],
+      "name": "New Multicolumn",
+      "settings": {
+        "title": "Find Your Shine in Every Collection",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_b7AjkH": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_hgGTrw": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "content": "<p>Absolutely stunning! The earrings I ordered were even more beautiful in person. Pure elegance!</p>",
+            "image": "shopify://shop_images/Ellipse_27.png",
+            "author": "Necklaces",
+            "rating": ""
+          }
+        },
+        "testimonial_RiyBqf": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "content": "<p>Absolutely stunning! The earrings I ordered were even more beautiful in person. Pure elegance!</p>",
+            "image": "shopify://shop_images/Ellipse_28.png",
+            "author": "Necklaces",
+            "rating": ""
+          }
+        },
+        "testimonial_w9AiBM": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "content": "<p>Absolutely stunning! The earrings I ordered were even more beautiful in person. Pure elegance!</p>",
+            "image": "shopify://shop_images/Ellipse_29.png",
+            "author": "Necklaces",
+            "rating": ""
+          }
+        },
+        "testimonial_FhwK9c": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "content": "<p>Absolutely stunning! The earrings I ordered were even more beautiful in person. Pure elegance!</p>",
+            "image": "shopify://shop_images/Ellipse_27.png",
+            "author": "Necklaces",
+            "rating": ""
+          }
+        },
+        "testimonial_tymYnf": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "content": "<p>Absolutely stunning! The earrings I ordered were even more beautiful in person. Pure elegance!</p>",
+            "image": "shopify://shop_images/Ellipse_28.png",
+            "author": "Necklaces",
+            "rating": ""
+          }
+        },
+        "testimonial_zKaQQr": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "content": "<p>Absolutely stunning! The earrings I ordered were even more beautiful in person. Pure elegance!</p>",
+            "image": "shopify://shop_images/Ellipse_29.png",
+            "author": "Necklaces",
+            "rating": ""
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_hgGTrw",
+        "testimonial_RiyBqf",
+        "testimonial_w9AiBM",
+        "testimonial_FhwK9c",
+        "testimonial_tymYnf",
+        "testimonial_zKaQQr"
+      ],
+      "name": "testimonials",
+      "settings": {
+        "title": "All The Happy Reviews",
+        "heading_size": "h1",
+        "content": "<p>Jewellery that speaks for itself, and so do the people who wear it</p>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_4RAqrE",
+    "new_multicolumn_gNyGj7",
+    "testimonials_b7AjkH"
+  ]
+}

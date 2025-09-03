@@ -1,0 +1,277 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_7fy96H": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_N9MP9H": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/Contant_Banner_Desktop.jpg",
+            "mobile_image": "shopify://shop_images/Contant_Banner_Mobile.jpg",
+            "heading": "",
+            "heading_size": "hxxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_N9MP9H"
+      ],
+      "custom_css": [
+        "h2.banner__heading.inline-richtext {font-weight: 600;}",
+        ".my-slick-slideshow ul.slick-dots {display: none;}"
+      ],
+      "settings": {
+        "custom_class": "luxury-collection-header",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_eDUy6L": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tz3Qwf": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>Get your orders delivered to your doorstep at no extra cost.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ULkX8w": {
+          "type": "column",
+          "settings": {
+            "title": "Exclusive Design",
+            "text": "<p>Stand out with unique, limited-edition styles you won’t find elsewhere.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RMwE6V": {
+          "type": "column",
+          "settings": {
+            "title": "Good Packaging",
+            "text": "<p>Each product comes securely packed with care and attention to detail.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_b7tkYf": {
+          "type": "column",
+          "settings": {
+            "title": "Highest Quality",
+            "text": "<p>Experience unmatched quality with every item crafted to perfection.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tz3Qwf",
+        "column_ULkX8w",
+        "column_RMwE6V",
+        "column_b7tkYf"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "description": "<p>Thank you for getting in touch!<br/>Kindly.<br/>Fill the form, have a great day!<br/>Contact Us:<br/>Email: <a href=\"mailto:pabeena.in@gmail.com\" title=\"mailto:pabeena.in@gmail.com\">pabeena.in@gmail.com<br/></a>Phone: <a href=\"tel:+918287526067\" title=\"tel:+918287526067\">+91 82875-26067</a></p>",
+        "color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "contact_info_93xYtP": {
+      "type": "contact-info",
+      "name": "Terminal Contact Info",
+      "settings": {
+        "image1": "shopify://shop_images/Frame.svg",
+        "title1": "<p>203,Krishna Plaza,Shalimar Enclave,Kamla Nagar,Agra</p>",
+        "link1": "https://maps.app.goo.gl/jC8wuFTEEkocjreq7",
+        "image2": "shopify://shop_images/Frame_1.svg",
+        "title2": "<p>pabeena.in@gmail.com</p>",
+        "link2": "mailto:pabeena.in@gmail.com",
+        "image3": "shopify://shop_images/Frame_2.svg",
+        "title3": "<p>Calling and WhatsApp<br/>9084398518</p>",
+        "link3": "tel:9084398518"
+      }
+    },
+    "latest_image_with_text_Fktbee": {
+      "type": "latest-image-with-text",
+      "blocks": {
+        "heading_Dnk6WX": {
+          "type": "heading",
+          "settings": {
+            "heading": "DISCOVER US",
+            "heading_size": "h2"
+          }
+        },
+        "text_Kg8w7Q": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore the exquisite world of Pabeena Jewelry, where every piece is a harmonious blend of tradition, craftsmanship, and contemporary charm. From statement necklaces that capture attention to delicate rings that whisper elegance, from graceful bangles that reflect heritage to timeless earrings that complete your look—each design is crafted to celebrate the beauty and strength of today’s woman.Whether you’re adorning yourself for a festive occasion or adding a touch of class to everyday moments, Pabeena’s collection offers jewelry that tells your story—bold, beautiful, and uniquely yours.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Dnk6WX",
+        "text_Kg8w7Q"
+      ],
+      "custom_css": [
+        ".latest-image-with-text-section .image-with-text__content {padding-right: 4rem;}",
+        ".image-with-text__text.rte.body p {font-size: 14px; text-align: justify;}"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/image_-_2025-05-28T162326.420.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-4d786101-e938-4a9f-8db3-1b0a9cf5f8f5",
+        "color_scheme": "scheme-4d786101-e938-4a9f-8db3-1b0a9cf5f8f5",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "latest_multicolumn_hhTCXB": {
+      "type": "latest-multicolumn",
+      "blocks": {
+        "column_NL3wrB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/fast-delivery.svg",
+            "title": "Fast & Secure Pan-India Delivery",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nziiC8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/packaging-green.svg",
+            "title": "Luxe Packaging, Gifting-Ready",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fhJGCj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/exchange-green.svg",
+            "title": "Easy Exchange & Hassle-Free Returns",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_fLxdAX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/new-green-support.svg",
+            "title": "Personalised Support, Always",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NL3wrB",
+        "column_nziiC8",
+        "column_fhJGCj",
+        "column_fLxdAX"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info h3.inline-richtext {font-weight: 100; font-size: 14px;}",
+        ".latest-multicolumn-section ul.multicolumn-list .multicolumn-card__image-wrapper {max-width: 50px !important;}",
+        ".latest-multicolumn-section ul.multicolumn-list .multicolumn-card__info {padding-bottom: 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_7fy96H",
+    "multicolumn_eDUy6L",
+    "form",
+    "contact_info_93xYtP",
+    "latest_image_with_text_Fktbee",
+    "latest_multicolumn_hhTCXB"
+  ]
+}

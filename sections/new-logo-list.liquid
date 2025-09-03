@@ -1,0 +1,182 @@
+<style>
+  .new-logo-bar__item {
+    display: inline-block;
+    max-width: {{ section.settings.logo_width }};
+  }
+  .new-logo-bar__item img {
+    width: 100%;
+}
+  ul.new-logo-list-parent {
+    text-align: center;
+    padding: 0;
+}
+  .new-logo-bar__item p {
+    margin-top: 0;
+}
+  .new-logo-bar__item img {
+    width: 100%;
+    height: auto;
+}
+  .new-logo-bar__item p {
+    font-size: 12px;
+}
+  .new-logo-bar__item {
+    width: 33%;
+}
+  ul.new-logo-list-parent {
+    /* display: flex;
+    justify-content: center; */
+    /* gap: 1rem; */
+}
+  ul.new-logo-list-parent li.new-logo-bar__item {
+    padding: 0 0.5rem;
+}
+  ul.new-logo-list-parent {
+    display: flex;
+    gap: 1rem;
+}
+.new-logo-bar__item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    padding: 0;
+}
+  @media screen and (max-width:767px){
+  .new-logo-bar__item {
+    width: 33%;
+}
+  }
+</style>
+<div class="main-section-container-new-logolist color-{{ section.settings.color_scheme }}">
+<h2 class="new-logo-list-main-title h2 center page-width">{{ section.settings.title }}</h2>
+<div class="new-my-cus-logo-list-{{ section.id }}">
+{%- if section.blocks.size > 0 -%}
+  <ul class="new-logo-list-parent">
+    {%- for block in section.blocks -%}
+      <li class="new-logo-bar__item" {{ block.shopify_attributes }}>
+        {%- if block.settings.link != blank -%}
+          <a href="{{ block.settings.link }}">
+        {%- endif -%}
+
+          {%- if block.settings.image != blank -%}
+            {{ block.settings.image | img_url: '160x160', scale: 2 | img_tag: block.settings.image.alt  }}
+          {%- else -%}
+            {{ 'logo' | placeholder_svg_tag: 'placeholder-svg' }}
+          {%- endif -%}
+            {% if block.settings.logo_title != blank %}
+              <p>{{ block.settings.logo_title }}</p>
+              {% endif %}
+        {%- if block.settings.link != blank -%}
+          </a>
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endif -%}
+</div>
+</div>
+
+<script>
+  
+nodeMarquee({
+    parent: '.new-my-cus-logo-list-{{ section.id }}',
+    speed: 1
+});
+ 
+</script>
+
+{% schema %}
+{
+  "name": "New Logo list",
+  "class": "index-section",
+  "max_blocks": 30,
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Logo list"
+    },
+    {
+      "type": "select",
+      "id": "logo_width",
+      "label": "Logo width",
+      "default": "160px",
+      "options": [
+        {
+          "label": "Extra Small",
+          "value": "100px"
+        },
+        {
+          "label": "Small",
+          "value": "125px"
+        },
+        {
+          "label": "Medium",
+          "value": "160px"
+        },
+        {
+          "label": "Large",
+          "value": "175px"
+        },
+        {
+          "label": "Extra Large",
+          "value": "200px"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo_image",
+      "name": "Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+      "type": "text",
+      "id": "logo_title",
+      "label": "Logo Heading",
+      "default": "Logo list"
+    },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link",
+          "info": "Optional"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Logo list",
+      "category": "Image",
+      "blocks": [
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        },
+        {
+          "type": "logo_image"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

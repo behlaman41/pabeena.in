@@ -1,0 +1,39 @@
+{%- liquid
+  assign featured_image = collection.featured_image
+  if grid_image == 'product'
+    assign featured_image = collection.products.first.featured_media
+  endif
+-%}
+<a class="card-wrapper card{% if featured_image != blank %} card--media{% else %} card--text{% endif %}" href="{{ collection_url | default: collection.url }}">
+  {%- if featured_image != blank -%}
+    <div class="media-wrapper">
+      <div class="media media--{{ image_ratio }} media--hover-effect overflow-hidden"
+        {%- if image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: featured_image.aspect_ratio | times: 100 }}%;"{% endif -%}
+      >
+        {%- capture sizes -%}(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 10rem) / 4), (min-width: 750px) calc((100vw - 10rem) / 3), calc(100vw - 3rem){%- endcapture -%}
+        {{ featured_image | image_url: width: 1100 | image_tag:
+          is: 'lazy-image',
+          loading: 'lazy',
+          sizes: sizes,
+          widths: '165, 360, 535, 750, 940, 1100',
+          alt: collection_title | escape
+        }}
+      </div>
+    </div>
+    <div class="card__text card__text-spacing">
+      <h3 class="card-information__text h4">{{ collection_title | default: collection.title | escape }}</h3>
+    </div>
+  {%- else -%}
+    <div class="media-wrapper">
+      <div class="media media--{{ image_ratio }} media--hover-effect overflow-hidden"
+        {%- if image_ratio == 'adapt' %} style="--image-ratio-percent: {{ 1 | divided_by: featured_image.aspect_ratio | times: 100 }}%;"{% endif -%}
+      >
+        <img src="https://cdn.shopify.com/s/files/1/0277/8818/1622/files/New_Project_2.png" alt="Nutrition" width="1100" height="1100" loading="lazy" is="lazy-image" sizes="(min-width: 1200px) 267px, (min-width: 990px) calc((100vw - 10rem) / 4), (min-width: 750px) calc((100vw - 10rem) / 3), calc(100vw - 3rem)"/>
+        
+      </div>
+    </div>
+    <div class="card__text card__text-spacing">
+      <h3 class="card-information__text h4">{{ collection_title | default: collection.title | escape }}</h3>
+    </div>
+  {%- endif -%}
+</a>

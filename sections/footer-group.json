@@ -1,0 +1,98 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "brand_information_CiTKkH": {
+          "type": "brand_information",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Artboard_133_3x_1.png",
+            "image_width": 180,
+            "alignment": "center",
+            "show_social": false,
+            "newsletter_description": "<p>Jewels that whisper tradition and shine with elegance.<br/>Pabeena brings your moments to life, one masterpiece at a time.</p>",
+            "newsletter_description_2": ""
+          }
+        },
+        "link_list_FYY6G8": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "custom_richtext": "",
+            "show_social": false,
+            "menu": "footer",
+            "show_newsletter": false,
+            "newsletter_description": "",
+            "newsletter_description_2": ""
+          }
+        },
+        "link_list_C9kXbT": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "custom_richtext": "",
+            "show_social": false,
+            "menu": "customer-service",
+            "show_newsletter": false,
+            "newsletter_description": "",
+            "newsletter_description_2": ""
+          }
+        },
+        "link_list_NCjcqz": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "custom_richtext": "",
+            "show_social": true,
+            "menu": "",
+            "show_newsletter": true,
+            "newsletter_description": "<p>Join Our newsletter to keep up to date with us!</p>",
+            "newsletter_description_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "brand_information_CiTKkH",
+        "link_list_FYY6G8",
+        "link_list_C9kXbT",
+        "link_list_NCjcqz"
+      ],
+      "settings": {
+        "footer_logo": "shopify://shop_images/Artboard_135_2x_1.png",
+        "address": "",
+        "another_address": "",
+        "color_scheme": "scheme-c7449b98-bc85-47af-9688-773a6c81991b",
+        "newsletter_enable": true,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": false,
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": false,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "first_bottom_heading": "",
+        "first_bottom_description": "",
+        "second_bottom_heading": "",
+        "second_bottom_description": ""
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

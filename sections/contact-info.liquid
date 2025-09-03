@@ -1,0 +1,163 @@
+<!-- terminal-contact-info.liquid -->
+<div class="terminal-contact-info">
+  <div class="page-width">
+    <div class="contact_box">
+      <div class="box_wrap_info">
+        <a href="{{ section.settings.link1 }}">
+          <img class="txxt_dd2" src="{{ section.settings.image1 | img_url: 'master' }}">
+          <div class="txxt_dd1">{{ section.settings.title1 }}</div>
+        </a>
+      </div>
+      <div class="box_wrap_info">
+        <a href="{{ section.settings.link2 }}">
+          <img class="txxt_dd2" src="{{ section.settings.image2 | img_url: 'master' }}">
+          <div class="txxt_dd1">{{ section.settings.title2 }}</div>
+        </a>
+      </div>
+      <div class="box_wrap_info">
+        <a href="{{ section.settings.link3 }}">
+          <img class="txxt_dd2" src="{{ section.settings.image3 | img_url: 'master' }}">
+          <div class="txxt_dd1">{{ section.settings.title3 }}</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  img.txxt_dd2 {
+    width: 40px;
+}
+  .box_wrap_info a {
+    text-decoration: none;
+    color: #6E815F;
+  
+    
+}
+  .txxt_dd1 p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+}
+  .contact_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+.box_wrap_info {
+    width: 22%;
+    display: flex
+;
+}
+.terminal-contact-info {
+    background: white;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.box_wrap_info {
+    width: 25%;
+}
+  .box_wrap_info a {
+    text-decoration: none;
+    color: #6E815F;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex
+;
+    align-items: center;
+    gap: 10px;
+}
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .txxt_dd1 p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+    img.txxt_dd2 {
+    width: 30px;
+}
+    .box_wrap_info {
+    width: 30%;
+}
+  }
+  @media (max-width: 767px) {
+    .box_wrap_info {
+    width: 100%;
+    
+  }
+    .contact_box {
+    flex-direction: column;
+              gap: 2rem;
+  }
+    .txxt_dd1 p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+}
+    img.txxt_dd2 {
+    width: 30px;
+  }
+    
+  }
+</style>
+{% schema %}
+{
+  "name": "Terminal Contact Info",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image 1"
+    },
+    {
+      "type": "richtext",
+      "id": "title1",
+      "label": "Title 1"
+    },
+    {
+      "type": "url",
+      "id": "link1",
+      "label": "Link 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image 2"
+    },
+    {
+      "type": "richtext",
+      "id": "title2",
+      "label": "Title 2"
+    },
+    {
+      "type": "url",
+      "id": "link2",
+      "label": "Link 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image 3"
+    },
+    {
+      "type": "richtext",
+      "id": "title3",
+      "label": "Title 3"
+    },
+    {
+      "type": "url",
+      "id": "link3",
+      "label": "Link 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Terminal Contact Info",
+      "category": "Contact"
+    }
+  ]
+}
+{% endschema %}

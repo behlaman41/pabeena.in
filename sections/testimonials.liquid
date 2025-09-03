@@ -1,0 +1,305 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: calc({{ section.settings.padding_top }}px * 0.75);
+    padding-bottom: calc({{ section.settings.padding_bottom }}px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-bottom: 0;
+    }
+  }
+{%- endstyle -%}
+<div class="color-{{ section.settings.color_scheme }} gradient">
+  <div class="section-{{ section.id }}-padding">
+    <div class="heading_section page-width">
+      {%- if section.settings.title != blank -%}
+        <div class="my-featured-title">
+        <h2 class="title {{ section.settings.heading_size }} center">
+          {{ section.settings.title | escape }}
+        </h2>
+        </div>
+      {%- endif -%}
+      {%- if section.settings.content != blank -%}
+        <div class="sub_title center">
+          {{ section.settings.content }}
+        </div>
+      {%- endif -%}
+    </div>
+    <div class="my-testimonials-sec-cont page-width">
+      {{ section.settings.custom_liquid }}
+      <div class="testimonial quotes {% comment %}swiper {% endcomment %}">
+        <div class="my-testimonial-slick {% comment %}swiper-wrapper{% endcomment %}">
+          {%- for block in section.blocks -%}
+            <div class="{% comment %}swiper-slide{% endcomment %}">
+              <div class="testimonial_wrapper">
+                <div class="testimonial_wrapper-inner">
+            {% if block.settings.product_image != blank %}
+                  <div class="testimonial_product_image">
+                {{ block.settings.product_image | image_url: width: 500 | image_tag: loading: 'lazy', class: 'card__image' }}
+                  </div>
+                  {% endif %}
+                <div class="testimonial_content">  
+                  {% if block.settings.image != blank %}
+            <div class="testimonial_auth_img">
+                  {{ block.settings.image | image_url: width: 500 | image_tag: loading: 'lazy', class: 'card__image' }}
+                  <div class="test_inner-cont">
+                    {%- if block.settings.author != blank -%}
+                      <div class="inline-richtext h3">{{ block.settings.author }}</div>
+                    {%- endif -%}
+                    <div class="cli-inner-icon">
+                      {{ block.settings.rating }}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            <div class="rating-svg-testimonial">
+              <svg fill=none height=20 viewBox="0 0 110 20"width=110 xmlns=http://www.w3.org/2000/svg><path d="M6.63457 5.90757L1.49981 6.65203L1.40887 6.67054C1.27119 6.70709 1.14568 6.77952 1.04516 6.88044C0.944636 6.98136 0.872697 7.10715 0.836688 7.24497C0.800679 7.38278 0.801891 7.52768 0.840201 7.66488C0.878511 7.80207 0.952545 7.92664 1.05474 8.02586L4.77463 11.6468L3.89737 16.7614L3.88691 16.8499C3.87848 16.9923 3.90805 17.1344 3.97258 17.2616C4.03712 17.3888 4.1343 17.4966 4.25418 17.5739C4.37406 17.6512 4.51233 17.6952 4.65483 17.7015C4.79733 17.7078 4.93894 17.6761 5.06517 17.6097L9.65747 15.1952L14.2393 17.6097L14.3198 17.6467C14.4526 17.699 14.597 17.7151 14.7381 17.6932C14.8792 17.6713 15.0119 17.6123 15.1227 17.5222C15.2334 17.4321 15.3182 17.3141 15.3684 17.1804C15.4185 17.0467 15.4321 16.9021 15.4079 16.7614L14.5299 11.6468L18.2514 8.02506L18.3141 7.95665C18.4038 7.8462 18.4626 7.71396 18.4845 7.57339C18.5065 7.43282 18.4907 7.28895 18.4389 7.15644C18.3872 7.02393 18.3012 6.90751 18.1898 6.81904C18.0784 6.73058 17.9455 6.67323 17.8047 6.65284L12.6699 5.90757L10.3746 1.25571C10.3082 1.12093 10.2053 1.00743 10.0777 0.928067C9.95016 0.848703 9.8029 0.806641 9.65265 0.806641C9.50239 0.806641 9.35513 0.848703 9.22755 0.928067C9.09996 1.00743 8.99714 1.12093 8.93072 1.25571L6.63457 5.90757Z"fill=#FF8900 /><g clip-path=url(#clip0_389_538)><path d="M29.1697 5.90757L24.035 6.65203L23.944 6.67054C23.8063 6.70709 23.6808 6.77952 23.5803 6.88044C23.4798 6.98136 23.4079 7.10715 23.3718 7.24497C23.3358 7.38278 23.337 7.52768 23.3754 7.66488C23.4137 7.80207 23.4877 7.92664 23.5899 8.02586L27.3098 11.6468L26.4325 16.7614L26.4221 16.8499C26.4136 16.9923 26.4432 17.1344 26.5077 17.2616C26.5723 17.3888 26.6695 17.4966 26.7893 17.5739C26.9092 17.6512 27.0475 17.6952 27.19 17.7015C27.3325 17.7078 27.4741 17.6761 27.6003 17.6097L32.1926 15.1952L36.7745 17.6097L36.855 17.6467C36.9878 17.699 37.1322 17.7151 37.2733 17.6932C37.4144 17.6713 37.5471 17.6123 37.6578 17.5222C37.7686 17.4321 37.8534 17.3141 37.9035 17.1804C37.9536 17.0467 37.9673 16.9021 37.9431 16.7614L37.065 11.6468L40.7865 8.02506L40.8493 7.95665C40.939 7.8462 40.9978 7.71396 41.0197 7.57339C41.0416 7.43282 41.0259 7.28895 40.9741 7.15644C40.9223 7.02393 40.8363 6.90751 40.7249 6.81904C40.6135 6.73058 40.4806 6.67323 40.3398 6.65284L35.2051 5.90757L32.9097 1.25571C32.8433 1.12093 32.7405 1.00743 32.6129 0.928067C32.4853 0.848703 32.3381 0.806641 32.1878 0.806641C32.0375 0.806641 31.8903 0.848703 31.7627 0.928067C31.6351 1.00743 31.5323 1.12093 31.4659 1.25571L29.1697 5.90757Z"fill=#FF8900 /></g><g clip-path=url(#clip1_389_538)><path d="M51.7049 5.90757L46.5701 6.65203L46.4792 6.67054C46.3415 6.70709 46.216 6.77952 46.1155 6.88044C46.0149 6.98136 45.943 7.10715 45.907 7.24497C45.871 7.38278 45.8722 7.52768 45.9105 7.66488C45.9488 7.80207 46.0229 7.92664 46.1251 8.02586L49.8449 11.6468L48.9677 16.7614L48.9572 16.8499C48.9488 16.9923 48.9784 17.1344 49.0429 17.2616C49.1074 17.3888 49.2046 17.4966 49.3245 17.5739C49.4444 17.6512 49.5826 17.6952 49.7251 17.7015C49.8676 17.7078 50.0093 17.6761 50.1355 17.6097L54.7278 15.1952L59.3096 17.6097L59.3901 17.6467C59.523 17.699 59.6673 17.7151 59.8084 17.6932C59.9495 17.6713 60.0822 17.6123 60.193 17.5222C60.3038 17.4321 60.3885 17.3141 60.4387 17.1804C60.4888 17.0467 60.5024 16.9021 60.4782 16.7614L59.6002 11.6468L63.3217 8.02506L63.3844 7.95665C63.4741 7.8462 63.5329 7.71396 63.5548 7.57339C63.5768 7.43282 63.561 7.28895 63.5093 7.15644C63.4575 7.02393 63.3715 6.90751 63.2601 6.81904C63.1487 6.73058 63.0158 6.67323 62.875 6.65284L57.7402 5.90757L55.4449 1.25571C55.3785 1.12093 55.2756 1.00743 55.1481 0.928067C55.0205 0.848703 54.8732 0.806641 54.723 0.806641C54.5727 0.806641 54.4254 0.848703 54.2979 0.928067C54.1703 1.00743 54.0675 1.12093 54.001 1.25571L51.7049 5.90757Z"fill=#FF8900 /></g><g clip-path=url(#clip2_389_538)><path d="M74.24 5.90757L69.1053 6.65203L69.0143 6.67054C68.8767 6.70709 68.7512 6.77952 68.6506 6.88044C68.5501 6.98136 68.4782 7.10715 68.4422 7.24497C68.4061 7.38278 68.4074 7.52768 68.4457 7.66488C68.484 7.80207 68.558 7.92664 68.6602 8.02586L72.3801 11.6468L71.5028 16.7614L71.4924 16.8499C71.484 16.9923 71.5135 17.1344 71.5781 17.2616C71.6426 17.3888 71.7398 17.4966 71.8596 17.5739C71.9795 17.6512 72.1178 17.6952 72.2603 17.7015C72.4028 17.7078 72.5444 17.6761 72.6706 17.6097L77.2629 15.1952L81.8448 17.6097L81.9253 17.6467C82.0581 17.699 82.2025 17.7151 82.3436 17.6932C82.4847 17.6713 82.6174 17.6123 82.7282 17.5222C82.8389 17.4321 82.9237 17.3141 82.9738 17.1804C83.0239 17.0467 83.0376 16.9021 83.0134 16.7614L82.1353 11.6468L85.8568 8.02506L85.9196 7.95665C86.0093 7.8462 86.0681 7.71396 86.09 7.57339C86.1119 7.43282 86.0962 7.28895 86.0444 7.15644C85.9926 7.02393 85.9067 6.90751 85.7952 6.81904C85.6838 6.73058 85.5509 6.67323 85.4101 6.65284L80.2754 5.90757L77.98 1.25571C77.9136 1.12093 77.8108 1.00743 77.6832 0.928067C77.5556 0.848703 77.4084 0.806641 77.2581 0.806641C77.1079 0.806641 76.9606 0.848703 76.833 0.928067C76.7054 1.00743 76.6026 1.12093 76.5362 1.25571L74.24 5.90757Z"fill=#FF8900 /></g><g clip-path=url(#clip3_389_538)><path d="M99.799 0.804969C99.9302 0.805468 100.059 0.838254 100.175 0.900434C100.29 0.962615 100.389 1.05228 100.461 1.1615L100.515 1.25486L102.811 5.90754L107.945 6.65199C108.542 6.73892 108.815 7.40853 108.511 7.88015L108.455 7.95661L108.392 8.02582L104.671 11.6467L105.548 16.7614C105.571 16.8948 105.56 17.0318 105.515 17.1598C105.471 17.2877 105.396 17.4026 105.296 17.4936C105.195 17.5846 105.074 17.6489 104.942 17.6806C104.811 17.7123 104.673 17.7103 104.543 17.6748L104.461 17.6467L104.38 17.6096L99.7982 15.1952L95.2059 17.6096C95.1214 17.6539 95.0353 17.6821 94.9484 17.6949L94.8631 17.703C94.7507 17.7071 94.6388 17.6877 94.5344 17.646C94.43 17.6044 94.3354 17.5414 94.2568 17.4611C94.1782 17.3808 94.1171 17.2849 94.0777 17.1797C94.0382 17.0744 94.0212 16.9621 94.0277 16.8499L94.0381 16.7614L94.9154 11.6467L91.1947 8.02502C91.0985 7.9313 91.0272 7.81502 90.9874 7.68675C90.9476 7.55848 90.9405 7.42228 90.9667 7.29056C90.9929 7.15883 91.0517 7.03576 91.1376 6.93253C91.2235 6.82929 91.3339 6.74918 91.4587 6.69948L91.5496 6.67051L91.6414 6.65199L96.7753 5.90754L99.0715 1.25567C99.1355 1.11773 99.2385 1.00155 99.3678 0.921466C99.4971 0.841378 99.647 0.800881 99.799 0.804969ZM99.799 3.43995V13.4809C99.8638 13.4809 99.9284 13.4887 99.9914 13.5042L100.084 13.5332L100.174 13.5735L103.686 15.4237L103.013 11.5018C102.98 11.308 103.018 11.1088 103.122 10.9417L103.178 10.862L103.244 10.7896L106.098 8.01053L102.162 7.44072C101.967 7.41248 101.79 7.314 101.663 7.16386L101.604 7.08579L101.556 7.00048L99.799 3.43995Z"fill=#FF8900 /></g><defs><clipPath id=clip0_389_538><rect fill=white height=19.3157 transform=translate(22.5352) width=19.3157 /></clipPath><clipPath id=clip1_389_538><rect fill=white height=19.3157 transform=translate(45.0703) width=19.3157 /></clipPath><clipPath id=clip2_389_538><rect fill=white height=19.3157 transform=translate(67.6055) width=19.3157 /></clipPath><clipPath id=clip3_389_538><rect fill=white height=19.3157 transform=translate(90.1406) width=19.3157 /></clipPath></defs></svg>
+            </div>
+                  {% if block.settings.title != blank %}
+                <div class="testimonial_title">
+                  <h2 class="h3">{{ block.settings.title }}</h2>
+                </div>
+              {% endif %}
+                  {%- if block.settings.content != blank -%}
+                    <div class="rte">{{ block.settings.content }}</div>
+                  {%- endif -%}
+            <div class="testimonial_content_bottom">
+              <div class="testimonial_content_bottom_inner">
+            
+            
+              </div>
+            </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% comment %}
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".quotes", {
+    /*spaceBetween: 30,
+    slidesPerView: '3',*/
+    /*centeredSlides: true,*/
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    freeMode: true,
+    speed: 5000,
+    shortSwipes: false,
+    longSwipes: false,
+   /* allowTouchMove: false,
+    grabCursor: false,*/
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1024: {
+        slidesPerView: 3.5,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+{% endcomment %}
+<style>
+.my-testimonial-slick button.slick-arrow:before {
+    display: none;
+}
+.my-testimonial-slick button.slick-arrow {
+    background: #fff;
+    border: 1px solid #D5D5D5;
+    padding: 0;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+      z-index: 2;
+}
+.my-testimonial-slick button.slick-arrow svg.my-slick-button-icon {
+    width: 20px;
+}
+</style>
+<script>
+  $('.my-testimonial-slick').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  nextArrow: '<button type="button" class="slick-next"><svg class="my-slick-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow" transform="translate(100, 100) rotate(180) "></path></svg></button>',
+  prevArrow: '<button type="button" class="slick-prev"><svg class="my-slick-button-icon" viewBox="0 0 100 100"><path d="M 10,50 L 60,100 L 70,90 L 30,50  L 70,10 L 60,0 Z" class="arrow"></path></svg></button>',
+    arrows: false,
+    dots: false,
+    centerMode: true,
+    centerPadding: '150px',
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '100px'
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '100px'
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: '50px'
+      }
+    }
+  ]
+});
+</script>
+ 
+
+
+{% schema %}
+{
+  "name": "testimonials",
+  "class": "shopify-section--testimonials",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Heading"
+    },
+        {
+          "type": "select",
+          "id": "heading_size",
+          "options": [
+            {
+              "value": "h2",
+              "label": "t:sections.all.heading_size.options__1.label"
+            },
+            {
+              "value": "h1",
+              "label": "t:sections.all.heading_size.options__2.label"
+            },
+            {
+              "value": "h0",
+              "label": "t:sections.all.heading_size.options__3.label"
+            },
+            {
+              "value": "hxl",
+              "label": "t:sections.all.heading_size.options__4.label"
+            },
+            {
+              "value": "hxxl",
+              "label": "t:sections.all.heading_size.options__5.label"
+            }
+          ],
+          "default": "h1",
+          "label": "t:sections.all.heading_size.label"
+        },
+    {
+      "type": "richtext",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "testimonial",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "product_image",
+          "label": "Product Image"
+        },
+        {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Multicolumn",
+      "label": "t:sections.multicolumn.settings.title.label"
+    },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Avatar"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "author",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "rating",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "testimonials"
+    }
+  ]
+}
+{% endschema %}

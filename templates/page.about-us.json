@@ -1,0 +1,372 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "slideshow_7fy96H": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_N9MP9H": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/About_Us_Banner_Desktop.jpg",
+            "mobile_image": "shopify://shop_images/About_Us_Banner_Mobile.jpg",
+            "heading": "",
+            "heading_size": "hxxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_N9MP9H"
+      ],
+      "custom_css": [
+        "h2.banner__heading.inline-richtext {font-weight: 600;}",
+        ".my-slick-slideshow ul.slick-dots {display: none;}"
+      ],
+      "settings": {
+        "custom_class": "luxury-collection-header",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_eDUy6L": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tz3Qwf": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>Get your orders delivered to your doorstep at no extra cost.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ULkX8w": {
+          "type": "column",
+          "settings": {
+            "title": "Exclusive Design",
+            "text": "<p>Stand out with unique, limited-edition styles you won’t find elsewhere.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_RMwE6V": {
+          "type": "column",
+          "settings": {
+            "title": "Good Packaging",
+            "text": "<p>Each product comes securely packed with care and attention to detail.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_b7tkYf": {
+          "type": "column",
+          "settings": {
+            "title": "Highest Quality",
+            "text": "<p>Experience unmatched quality with every item crafted to perfection.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tz3Qwf",
+        "column_ULkX8w",
+        "column_RMwE6V",
+        "column_b7tkYf"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "unique_image_with_text_KT7ngK": {
+      "type": "unique-image-with-text",
+      "blocks": {
+        "image_xMp33k": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Artboard_128_3x_583fcfa4-db37-4548-9f27-cdea7c458f9a.png"
+          }
+        },
+        "text_XWQmJw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of our atelier lies a deep reverence for heritage, artistry, and timeless elegance. We craft jewellery that transcends ornamentation — each piece is a narrative of culture, craftsmanship, and quiet opulence.<br/>Every creation is meticulously handcrafted using the highest quality stones, moissanites, and AD embellishments, set in rich gold-plated finishes that mirror the glow of tradition and royalty. Our designs celebrate intricate detail — echoing age-old techniques, while embracing a modern woman’s spirit of individuality.<br/>Rooted in legacy and refined with innovation, our collections span regal kundan sets, moissanite solitaires, temple-inspired motifs, and vibrant polki designs. Whether adorned for a celebration or collected as an heirloom, our jewellery is made to be cherished — forever.<br/>This is not just jewellery. This is art. This is legacy. This is luxury.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "image_xMp33k",
+        "text_XWQmJw"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/bharti7410.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_N4Dmw8": {
+      "type": "multirow",
+      "blocks": {
+        "row_wy6Uqn": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8268_1.png",
+            "caption": "",
+            "heading": "Why Choose Us",
+            "text": "<p><strong>Timeless Elegance:</strong> We blend traditional craftsmanship with modern designs to create pieces that never go out of style.<br/><strong>Premium Quality:</strong> Every product is made with the finest fabrics and meticulous attention to detail.<br/><strong>Affordable Luxury:</strong> Experience high-end fashion without the high-end price tag.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_CQKPV3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/bharti7727_1.png",
+            "caption": "",
+            "heading": "",
+            "text": "<p><strong>Customer First:</strong> Your satisfaction is our priority—easy returns, responsive support, and a seamless shopping experience.<br/><strong>Sustainable Fashion:</strong> We are committed to ethical practices and environmentally conscious production.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_wy6Uqn",
+        "row_CQKPV3"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "small",
+        "image_layout": "alternate-right",
+        "heading_size": "h2",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "scheme-1",
+        "row_color_scheme": "scheme-4",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_4rDUtt": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_J7FxRX": {
+          "type": "heading",
+          "settings": {
+            "heading": "ABOUT US",
+            "heading_size": "h2"
+          }
+        },
+        "text_GBMR6C": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of Pabeena lies a deep reverence for heritage, artistry, and timeless elegance. Each piece is handcrafted with high-quality stones, moissanites, and AD embellishments in rich gold-plated finishes — blending age-old techniques with a modern woman’s bold spirit.</p><p>From regal kundan sets and moissanite solitaires to temple-inspired motifs and vibrant polki designs, our jewellery is more than adornment — it’s art, legacy, and luxury to be cherished forever.</p>",
+            "custom_liquid": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_J7FxRX",
+        "text_GBMR6C"
+      ],
+      "custom_css": [
+        ".my-rich-text-section .rich-text__blocks {max-width: 100% !important; border-radius: 24px; background: #ebefdc; padding: 4rem;}",
+        ".rich-text__text.rte p {text-align: left;}",
+        "@media screen and (max-width: 767px) {.my-rich-text-section .rich-text__blocks {padding: 2rem; }}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4d786101-e938-4a9f-8db3-1b0a9cf5f8f5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "testimonials_C6QUUG": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_rmbyeH": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>It’s fancy, beautiful design, and fits perfectly. I haven’t taken it off since I got it.</p>",
+            "image": "shopify://shop_images/beautiful-woman-purple-sweater-skirt.png",
+            "author": "Ananya R.",
+            "rating": "<p>20 days ago</p>"
+          }
+        },
+        "testimonial_pH39eK": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>The chain sits perfectly, and I love the softness of the design. Elegant</p>",
+            "image": "shopify://shop_images/image_15.png",
+            "author": "Nandita V.",
+            "rating": "<p>42 days ago</p>"
+          }
+        },
+        "testimonial_FqHdgh": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>Looks delicate but feels strong. It’s now my go-to piece for every outfit.</p>",
+            "image": "shopify://shop_images/image_17.png",
+            "author": "Aarti J.",
+            "rating": "<p>15 days ago</p>"
+          }
+        },
+        "testimonial_e4CtTf": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>I wore them all day and completely forgot I had them on — that’s how light they are!</p>",
+            "image": "shopify://shop_images/image_18.png",
+            "author": "Pooja V.",
+            "rating": "<p>27 days ago</p>"
+          }
+        },
+        "testimonial_WRxM3H": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>Love how simple it is but still makes a statement. Feels like it was made just for me</p>",
+            "image": "shopify://shop_images/image_16.png",
+            "author": "Tanya M.",
+            "rating": "<p>30 days ago</p>"
+          }
+        },
+        "testimonial_RGfQ8w": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>Looks minimal but feels so meaningful. I get compliments every time I wear it.</p>",
+            "image": "shopify://shop_images/image_19.png",
+            "author": "Ishita L.",
+            "rating": "<p>45 days ago</p>"
+          }
+        },
+        "testimonial_8xikjc": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>I’ve been wearing it daily. It’s light, elegant, and works with everything I wear.</p>",
+            "image": "shopify://shop_images/woman-smiling-looking-away.png",
+            "author": "Shalini B.",
+            "rating": "<p>10 days ago</p>"
+          }
+        },
+        "testimonial_GhdPnE": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>They outshine my outfits every time. I love how quietly beautiful they are.</p>",
+            "image": "shopify://shop_images/image_14.png",
+            "author": "Sonali M.",
+            "rating": "<p>34 days ago</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_rmbyeH",
+        "testimonial_pH39eK",
+        "testimonial_FqHdgh",
+        "testimonial_e4CtTf",
+        "testimonial_WRxM3H",
+        "testimonial_RGfQ8w",
+        "testimonial_8xikjc",
+        "testimonial_GhdPnE"
+      ],
+      "custom_css": [
+        ".my-featured-title h2.title {font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "What Our Happy Customers Are Saying",
+        "heading_size": "h2",
+        "content": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_7fy96H",
+    "multicolumn_eDUy6L",
+    "unique_image_with_text_KT7ngK",
+    "multirow_N4Dmw8",
+    "rich_text_4rDUtt",
+    "testimonials_C6QUUG"
+  ]
+}

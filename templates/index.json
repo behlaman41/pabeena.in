@@ -1,0 +1,965 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "homepage_slider_wFPAew": {
+      "type": "homepage-slider",
+      "name": "Homepage Slider Banner",
+      "settings": {
+        "slide1_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-04.jpg",
+        "slide1_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-07.jpg",
+        "link1": "https://www.pabeena.in/collections/necklaces",
+        "slide2_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-11.jpg",
+        "slide2_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-06.jpg",
+        "link2": "https://www.pabeena.in/collections/luxury-necklaces",
+        "slide3_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-09.jpg",
+        "slide3_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-05.jpg",
+        "link3": "https://www.pabeena.in/collections/rings",
+        "slide4_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-10.jpg",
+        "slide4_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-08.jpg",
+        "link4": "https://www.pabeena.in/collections/earrings",
+        "link5": ""
+      }
+    },
+    "slideshow_FmwHHa": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_4Hhphw": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/Desktop_Mobile_Website_Banner-04.jpg",
+            "mobile_image": "shopify://shop_images/Desktop_Mobile_Website_Banner-07.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/luxury-necklaces",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_EqpfUa": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/Desktop_Mobile_Website_Banner-10.jpg",
+            "mobile_image": "shopify://shop_images/Desktop_Mobile_Website_Banner-08.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/necklaces",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_e4rBD3": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/Desktop_Mobile_Website_Banner-09.jpg",
+            "mobile_image": "shopify://shop_images/Desktop_Mobile_Website_Banner-05.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/rings",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_XBq74H": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/Desktop_Mobile_Website_Banner-11.jpg",
+            "mobile_image": "shopify://shop_images/Desktop_Mobile_Website_Banner-06.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://collections/bangles",
+            "button_style_secondary": true,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        },
+        "slide_zp8qpL": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/Desktop_Mobile_Website_Banner-14.jpg",
+            "mobile_image": "shopify://shop_images/Desktop_Mobile_Website_Banner_2.jpg",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify://collections/earrings",
+            "button_style_secondary": false,
+            "box_align": "bottom-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "left"
+          }
+        }
+      },
+      "block_order": [
+        "slide_4Hhphw",
+        "slide_EqpfUa",
+        "slide_e4rBD3",
+        "slide_XBq74H",
+        "slide_zp8qpL"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2.banner__heading.inline-richtext {font-weight: 600; color: #f9f3e3;}",
+        "a.button.button--primary {background: #6e815f; color: #fff; margin-top: 2rem; margin-left: 8rem;}",
+        "a.button.button--primary:after,a.button.button--primary:before {display: none;}",
+        ".slideshow__text.banner__box.content-container {display: flex; align-items: flex-start !important; justify-content: flex-end !important;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "multicolumn_7X96wz": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_RTHMwh": {
+          "type": "column",
+          "settings": {
+            "title": "Free Shipping",
+            "text": "<p>Get your orders delivered to your doorstep at no extra cost.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DbqdJT": {
+          "type": "column",
+          "settings": {
+            "title": "Exclusive Design",
+            "text": "<p>Stand out with unique, limited-edition styles you won’t find elsewhere.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mGpBxC": {
+          "type": "column",
+          "settings": {
+            "title": "Good Packaging",
+            "text": "<p>Each product comes securely packed with care and attention to detail.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hRX4Hh": {
+          "type": "column",
+          "settings": {
+            "title": "Highest Quality",
+            "text": "<p>Experience unmatched quality with every item crafted to perfection.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_RTHMwh",
+        "column_DbqdJT",
+        "column_mGpBxC",
+        "column_hRX4Hh"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "latest_multicolumn_3bNyTN": {
+      "type": "latest-multicolumn",
+      "blocks": {
+        "column_HW88PU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/diamond_1a504816-8ff4-4805-9095-9cea73483aeb.svg",
+            "title": "Redefining Luxury",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_QerXqk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/jewellery.svg",
+            "title": "Jewelry with a Story",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3TPqnj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/ring.svg",
+            "title": "Elegance, Reinvented",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_LK9FaN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/neclace.svg",
+            "title": "Crafted to Captivate",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iNCfk4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/earring.svg",
+            "title": "Grace in Every Detail",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_HW88PU",
+        "column_QerXqk",
+        "column_3TPqnj",
+        "column_LK9FaN",
+        "column_iNCfk4"
+      ],
+      "custom_css": [
+        ".multicolumn-card__info h3.inline-richtext {font-weight: 100; font-size: 14px;}",
+        ".latest-multicolumn-section ul.multicolumn-list .multicolumn-card__image-wrapper {max-width: 80px !important;}",
+        ".latest-multicolumn-section ul.multicolumn-list .multicolumn-card__info {padding-bottom: 0;}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "logo_list_FyVwnE": {
+      "type": "logo-list",
+      "blocks": {
+        "logo_image_4mUFdE": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8374_1.png",
+            "logo_title": "Necklaces",
+            "link": "shopify://collections/necklaces"
+          }
+        },
+        "logo_image_dr8rKa": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8531_1.png",
+            "logo_title": "Earrings",
+            "link": "shopify://collections/earrings"
+          }
+        },
+        "logo_image_aVBL9n": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8267_1.png",
+            "logo_title": "Bangles",
+            "link": "shopify://collections/bangles"
+          }
+        },
+        "logo_image_9CUHQW": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_Session8413_1.png",
+            "logo_title": "Rings",
+            "link": "shopify://collections/rings"
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_4mUFdE",
+        "logo_image_dr8rKa",
+        "logo_image_aVBL9n",
+        "logo_image_9CUHQW"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "title": "Discover our collection",
+        "description": "<p>A perfect blend of tradition, elegance, and timeless craftsmanship</p>",
+        "logo_width": "160px"
+      }
+    },
+    "new_image_with_text_BGCJyf": {
+      "type": "new-image-with-text",
+      "blocks": {
+        "heading_4HEUWz": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Art of Pabeena Jewellery",
+            "heading_size": "h1"
+          }
+        },
+        "text_3HWfjJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Where timeless tradition meets modern elegance — handcrafted pieces that celebrate your unique beauty with every detail.</p><p>Every Pabeena creation tells a story — of heritage, craftsmanship, and style.</p>",
+            "text_style": "body",
+            "image": "shopify://shop_images/bharti7470_1.png"
+          }
+        },
+        "button_pkkxbV": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4HEUWz",
+        "text_3HWfjJ",
+        "button_pkkxbV"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Untitled_Session8409_1_1.png",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_image_with_text_nJqDL3": {
+      "type": "new-image-with-text",
+      "blocks": {
+        "heading_MRQFUk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Every Necklace, A Quiet Masterpiece",
+            "heading_size": "h2"
+          }
+        },
+        "text_cJTiqD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Created for moments that matter. Crafted with emotion in every detail.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_FLkGPN": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/necklaces",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_MRQFUk",
+        "text_cJTiqD",
+        "button_FLkGPN"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/bharti7400_2_1_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_tab_with_products_tTenB4": {
+      "type": "new-tab-with-products",
+      "blocks": {
+        "outertab_nHJDmK": {
+          "type": "outertab",
+          "settings": {
+            "main_head": "OUR TOP DECK",
+            "title": "Bangles",
+            "title_2": "Necklaces",
+            "title_3": "Earrings",
+            "title_4": "Rings",
+            "title_5": "Luxury",
+            "title_6": "",
+            "title_7": "",
+            "title_8": "",
+            "title_9": "",
+            "title_10": "",
+            "heading_size": "h1",
+            "description": "",
+            "show_description": false,
+            "description_style": "body",
+            "collection": "bangles",
+            "collection_2": "necklaces",
+            "collection_3": "earrings",
+            "collection_4": "rings",
+            "collection_5": "luxury",
+            "collection_6": "",
+            "collection_7": "",
+            "collection_8": "",
+            "collection_9": "",
+            "collection_10": "",
+            "products_to_show": 25,
+            "enable_desktop_slider": false,
+            "desktopShow": 4,
+            "mobileInit": false,
+            "mobileShow": 2,
+            "full_width": false,
+            "show_view_all": true,
+            "view_all_style": "solid",
+            "image_ratio": "adapt",
+            "show_secondary_image": false,
+            "show_vendor": false,
+            "show_rating": false,
+            "quick_add": "standard",
+            "padding_top": 36,
+            "padding_bottom": 36
+          }
+        }
+      },
+      "block_order": [
+        "outertab_nHJDmK"
+      ],
+      "custom_css": [
+        ".tab.main_head {display: none;}"
+      ],
+      "name": "New Tabs with Products",
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "extra_content": ""
+      }
+    },
+    "new_card_slider_7XqtMk": {
+      "type": "new-card-slider",
+      "name": "New Card Slider",
+      "settings": {
+        "custom_liquid": "<p><strong>Luxury Jewellery</strong></p>",
+        "collection": "luxury",
+        "products_to_show": 25,
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 20,
+        "custom_liquid_bottom": ""
+      }
+    },
+    "latest_image_with_text_zY4HVT": {
+      "type": "latest-image-with-text",
+      "blocks": {
+        "heading_hMRH7Q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Indulge in our luxury collection",
+            "heading_size": "h1"
+          }
+        },
+        "text_CYaA9w": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "image_aUaGyP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7400_1_1.png",
+            "text": "<p>Mahalaya Heirloom Enamel Polki Choker</p>",
+            "link": "#",
+            "image_1": "shopify://shop_images/bharti7404_1.png",
+            "text_1": "<p>Mahira Regal Polki Jadau Choker</p>",
+            "link_1": "#"
+          }
+        },
+        "button_KYmEyF": {
+          "type": "button",
+          "settings": {
+            "button_label": "View More",
+            "button_link": "shopify://collections/luxury",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hMRH7Q",
+        "text_CYaA9w",
+        "image_aUaGyP",
+        "button_KYmEyF"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/bharti7400_2_1.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "image_behavior": "none",
+        "content_layout": "no-overlap",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "left",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "page_width_image_banner_pUMaTc": {
+      "type": "page-width-image-banner",
+      "blocks": {
+        "heading_mQ9RQT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Discover Our Latest Arrivals Fresh Styles, Unique Finds",
+            "heading_size": "h1"
+          }
+        },
+        "text_hpE7ay": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Aurya Moissanite Solitaire</p>",
+            "text_style": "body"
+          }
+        },
+        "buttons_w8CUaX": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Discover the collection",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mQ9RQT",
+        "text_hpE7ay",
+        "buttons_w8CUaX"
+      ],
+      "custom_css": [
+        ".banner__media.media img {object-fit: contain !important;}",
+        ".banner__buttons a.button.button--secondary {font-weight: 600;}",
+        "h2.banner__heading.inline-richtext {font-weight: 100 !important; font-size: 32px; max-width: 500px;}",
+        ".banner__buttons {margin-top: 1rem !important;}",
+        ".banner--medium:not(.banner--adapt) {min-height: unset;}"
+      ],
+      "settings": {
+        "custom_class": "",
+        "redirect_url": "",
+        "image": "shopify://shop_images/Untitled_Session8411_2.png",
+        "mobile_image": "shopify://shop_images/Untitled_Session8411_2.png",
+        "variant_id": "",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-5",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "new_logo_list_G4zt8d": {
+      "type": "new-logo-list",
+      "blocks": {
+        "logo_image_mbMX7z": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_164.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_anDVDe": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti6791_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_rA3PTr": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_166.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_VWNamF": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7743_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_JhbBVP": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_164.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_KYbJyt": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7433.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_k3kVDp": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7578.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_a3JkEM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7466.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_bX8U67": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7549.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_WCJNDr": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7709_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_mbMX7z",
+        "logo_image_anDVDe",
+        "logo_image_rA3PTr",
+        "logo_image_VWNamF",
+        "logo_image_JhbBVP",
+        "logo_image_KYbJyt",
+        "logo_image_k3kVDp",
+        "logo_image_a3JkEM",
+        "logo_image_bX8U67",
+        "logo_image_WCJNDr"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-1",
+        "title": "Spotlight on Style",
+        "logo_width": "175px"
+      }
+    },
+    "featured_collection_FVT7kR": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2.title.inline-richtext {text-align: center; font-weight: 600;}"
+      ],
+      "name": "t:sections.featured-collection.presets.name",
+      "settings": {
+        "collection": "bangles",
+        "products_to_show": 25,
+        "title": "Top selling product",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "columns_desktop": 4,
+        "enable_desktop_slider": false,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_NRqcry": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_MA9kWx": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>It’s fancy, beautiful design, and fits perfectly. I haven’t taken it off since I got it.</p>",
+            "image": "shopify://shop_images/beautiful-woman-purple-sweater-skirt.png",
+            "author": "Ananya R.",
+            "rating": "<p>20 days ago</p>"
+          }
+        },
+        "testimonial_E6hCLY": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>The chain sits perfectly, and I love the softness of the design. Elegant</p>",
+            "image": "shopify://shop_images/image_15.png",
+            "author": "Nandita V.",
+            "rating": "<p>42 days ago</p>"
+          }
+        },
+        "testimonial_aVJPUc": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>Looks delicate but feels strong. It’s now my go-to piece for every outfit.</p>",
+            "image": "shopify://shop_images/image_17.png",
+            "author": "Aarti J.",
+            "rating": "<p>15 days ago</p>"
+          }
+        },
+        "testimonial_d7Jden": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>I wore them all day and completely forgot I had them on — that’s how light they are!</p>",
+            "image": "shopify://shop_images/image_18.png",
+            "author": "Pooja V.",
+            "rating": "<p>27 days ago</p>"
+          }
+        },
+        "testimonial_LxDKG3": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>Love how simple it is but still makes a statement. Feels like it was made just for me</p>",
+            "image": "shopify://shop_images/image_16.png",
+            "author": "Tanya M.",
+            "rating": "<p>30 days ago</p>"
+          }
+        },
+        "testimonial_7LmrE4": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>Looks minimal but feels so meaningful. I get compliments every time I wear it.</p>",
+            "image": "shopify://shop_images/image_19.png",
+            "author": "Ishita L.",
+            "rating": "<p>45 days ago</p>"
+          }
+        },
+        "testimonial_EpkVFG": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>I’ve been wearing it daily. It’s light, elegant, and works with everything I wear.</p>",
+            "image": "shopify://shop_images/woman-smiling-looking-away.png",
+            "author": "Shalini B.",
+            "rating": "<p>10 days ago</p>"
+          }
+        },
+        "testimonial_xAyHXC": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>They outshine my outfits every time. I love how quietly beautiful they are.</p>",
+            "image": "shopify://shop_images/image_14.png",
+            "author": "Sonali M.",
+            "rating": "<p>34 days ago</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_MA9kWx",
+        "testimonial_E6hCLY",
+        "testimonial_aVJPUc",
+        "testimonial_d7Jden",
+        "testimonial_LxDKG3",
+        "testimonial_7LmrE4",
+        "testimonial_EpkVFG",
+        "testimonial_xAyHXC"
+      ],
+      "custom_css": [
+        ".my-featured-title h2.title {font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "What Our Happy Customers Are Saying",
+        "heading_size": "h2",
+        "content": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1748423168c7ad074e": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_AAQxLF": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Follow Us On<br>#Instagram",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_AAQxLF"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "homepage_slider_wFPAew",
+    "slideshow_FmwHHa",
+    "multicolumn_7X96wz",
+    "latest_multicolumn_3bNyTN",
+    "logo_list_FyVwnE",
+    "new_image_with_text_BGCJyf",
+    "new_image_with_text_nJqDL3",
+    "new_tab_with_products_tTenB4",
+    "new_card_slider_7XqtMk",
+    "latest_image_with_text_zY4HVT",
+    "page_width_image_banner_pUMaTc",
+    "new_logo_list_G4zt8d",
+    "featured_collection_FVT7kR",
+    "testimonials_NRqcry",
+    "1748423168c7ad074e"
+  ]
+}

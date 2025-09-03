@@ -1,0 +1,171 @@
+<div class="slider-wrapper">
+  <div class="slider" id="homepageSlider-{{ section.id }}">
+    {% for i in (1..5) %}
+      {% assign desktop = 'slide' | append: i | append: '_desktop' %}
+      {% assign mobile = 'slide' | append: i | append: '_mobile' %}
+      {% assign link = 'link' | append: i %}
+
+      {% if section.settings[desktop] or section.settings[mobile] %}
+        <a href="{{ section.settings[link] | default: '#' }}">
+          <picture>
+            {% if section.settings[mobile] %}
+              <source media="(max-width: 768px)" srcset="{{ section.settings[mobile] | image_url: width: 900 }}">
+            {% endif %}
+            {% if section.settings[desktop] %}
+              <img
+                src="{{ section.settings[desktop] | image_url: width: 2000 }}"
+                alt="Slide {{ i }}"
+                loading="lazy"
+                draggable="false"
+              >
+            {% endif %}
+          </picture>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+
+  <div class="dots" id="sliderDots-{{ section.id }}" aria-label="Slider pagination"></div>
+</div>
+
+<style>
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  .slider {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    will-change: transform;
+  }
+  .slider a {
+    width: 100%;
+    flex-shrink: 0;
+  }
+  .slider img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  .dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+  }
+  .dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: #fff;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  .dots button.active {
+    opacity: 1;
+    background: #000;
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.getElementById("homepageSlider-{{ section.id }}");
+    const slides = slider ? slider.querySelectorAll("a") : [];
+    const dotsContainer = document.getElementById("sliderDots-{{ section.id }}");
+    let index = 0;
+    let total = slides.length;
+    let startX = 0;
+    let currentX = 0;
+
+    if (!slider || total === 0) return;
+
+    // Set width of slider track
+    slider.style.width = `${100 * total}%`;
+    slides.forEach(slide => {
+      slide.style.width = `${100 / total}%`;
+    });
+
+    // Create dots
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement("button");
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => showSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+
+    function showSlide(i) {
+      index = i;
+      slider.style.transform = `translateX(${-i * (100 / total)}%)`;
+      [...dotsContainer.children].forEach((d, idx) => {
+        d.classList.toggle("active", idx === i);
+      });
+    }
+
+    function autoSlide() {
+      index = (index + 1) % total;
+      showSlide(index);
+    }
+
+    let autoPlay = setInterval(autoSlide, 4000); // Auto-slide every 4s
+
+    // --- Touch events for swipe ---
+    slider.addEventListener("touchstart", (e) => {
+      clearInterval(autoPlay);
+      startX = e.touches[0].clientX;
+    });
+
+    slider.addEventListener("touchmove", (e) => {
+      currentX = e.touches[0].clientX;
+    });
+
+    slider.addEventListener("touchend", () => {
+      let diff = startX - currentX;
+      if (diff > 50) {
+        // swipe left
+        index = (index + 1) % total;
+      } else if (diff < -50) {
+        // swipe right
+        index = (index - 1 + total) % total;
+      }
+      showSlide(index);
+      autoPlay = setInterval(autoSlide, 4000); // restart autoplay
+    });
+
+    // Show first slide
+    showSlide(index);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Homepage Slider Banner",
+  "settings": [
+    { "type": "image_picker", "id": "slide1_desktop", "label": "Slide 1 Desktop Image" },
+    { "type": "image_picker", "id": "slide1_mobile", "label": "Slide 1 Mobile Image" },
+    { "type": "url", "id": "link1", "label": "Slide 1 Link" },
+
+    { "type": "image_picker", "id": "slide2_desktop", "label": "Slide 2 Desktop Image" },
+    { "type": "image_picker", "id": "slide2_mobile", "label": "Slide 2 Mobile Image" },
+    { "type": "url", "id": "link2", "label": "Slide 2 Link" },
+
+    { "type": "image_picker", "id": "slide3_desktop", "label": "Slide 3 Desktop Image" },
+    { "type": "image_picker", "id": "slide3_mobile", "label": "Slide 3 Mobile Image" },
+    { "type": "url", "id": "link3", "label": "Slide 3 Link" },
+
+    { "type": "image_picker", "id": "slide4_desktop", "label": "Slide 4 Desktop Image" },
+    { "type": "image_picker", "id": "slide4_mobile", "label": "Slide 4 Mobile Image" },
+    { "type": "url", "id": "link4", "label": "Slide 4 Link" },
+
+    { "type": "image_picker", "id": "slide5_desktop", "label": "Slide 5 Desktop Image" },
+    { "type": "image_picker", "id": "slide5_mobile", "label": "Slide 5 Mobile Image" },
+    { "type": "url", "id": "link5", "label": "Slide 5 Link" }
+  ],
+  "presets": [
+    { "name": "Homepage Slider Banner" }
+  ]
+}
+{% endschema %}

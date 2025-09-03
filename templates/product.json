@@ -1,0 +1,534 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_YLjzCh": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_PVpeXB": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "{{ product.metafields.custom.top_banner.value }}",
+            "mobile_image": "{{ product.metafields.custom.top_banner.value }}",
+            "heading": "",
+            "heading_size": "hxxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_PVpeXB"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "h2.banner__heading.inline-richtext {font-weight: 600;}",
+        ".my-slick-slideshow ul.slick-dots {display: none;}"
+      ],
+      "settings": {
+        "custom_class": "luxury-collection-header luxury-product-header",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "judge_me_reviews_preview_badge_97EjVf": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "collapsible_tab_zfr8HB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Description",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "custom_liquid": "{{ product.description }}"
+          }
+        },
+        "iconwithtext_BMfwC4": {
+          "type": "iconwithtext",
+          "settings": {
+            "svg_icon_code_1": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.25002 18.75C8.25002 19.1478 8.09198 19.5293 7.81068 19.8107C7.52937 20.092 7.14784 20.25 6.75002 20.25C6.35219 20.25 5.97066 20.092 5.68936 19.8107C5.40805 19.5293 5.25002 19.1478 5.25002 18.75M8.25002 18.75C8.25002 18.3522 8.09198 17.9706 7.81068 17.6893C7.52937 17.408 7.14784 17.25 6.75002 17.25C6.35219 17.25 5.97066 17.408 5.68936 17.6893C5.40805 17.9706 5.25002 18.3522 5.25002 18.75M8.25002 18.75H14.25M5.25002 18.75H3.37502C3.07665 18.75 2.7905 18.6315 2.57952 18.4205C2.36855 18.2095 2.25002 17.9234 2.25002 17.625V14.25M14.25 18.75H16.5M14.25 18.75V14.25M2.25002 14.25V6.61499C2.24843 6.34116 2.34848 6.07648 2.53081 5.87217C2.71313 5.66786 2.96477 5.53845 3.23702 5.50899C6.57006 5.16302 9.92997 5.16302 13.263 5.50899C13.828 5.56699 14.25 6.04699 14.25 6.61499V7.57299M2.25002 14.25H14.25M19.5 18.75C19.5 19.1478 19.342 19.5293 19.0607 19.8107C18.7794 20.092 18.3978 20.25 18 20.25C17.6022 20.25 17.2207 20.092 16.9394 19.8107C16.6581 19.5293 16.5 19.1478 16.5 18.75M19.5 18.75C19.5 18.3522 19.342 17.9706 19.0607 17.6893C18.7794 17.408 18.3978 17.25 18 17.25C17.6022 17.25 17.2207 17.408 16.9394 17.6893C16.6581 17.9706 16.5 18.3522 16.5 18.75M19.5 18.75H20.625C21.246 18.75 21.754 18.246 21.715 17.626C21.5141 14.3236 20.4019 11.1416 18.502 8.43299C18.3211 8.17927 18.0848 7.97001 17.8111 7.82102C17.5373 7.67203 17.2333 7.58722 16.922 7.57299H14.25M14.25 7.57299V14.25\" stroke=\"#D75951\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "my_block_text_1": "<p><strong>Delivery</strong><br/>Enter your Postal code for Delivery Availability At Checkout.</p>",
+            "svg_icon_code_2": "<svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M15.7502 10.5V6C15.7502 5.00544 15.3551 4.05161 14.6519 3.34835C13.9486 2.64509 12.9948 2.25 12.0002 2.25C11.0057 2.25 10.0518 2.64509 9.34858 3.34835C8.64532 4.05161 8.25023 5.00544 8.25023 6V10.5M19.6062 8.507L20.8692 20.507C20.9392 21.172 20.4192 21.75 19.7502 21.75H4.25023C4.09244 21.7502 3.93637 21.7171 3.79218 21.6531C3.64798 21.589 3.51888 21.4953 3.41325 21.3781C3.30763 21.2608 3.22784 21.1227 3.17908 20.9726C3.13032 20.8226 3.11368 20.6639 3.13023 20.507L4.39423 8.507C4.42339 8.23056 4.55385 7.9747 4.76048 7.78876C4.96711 7.60281 5.23526 7.49995 5.51323 7.5H18.4872C19.0632 7.5 19.5462 7.935 19.6062 8.507ZM8.62523 10.5C8.62523 10.5995 8.58572 10.6948 8.51539 10.7652C8.44507 10.8355 8.34969 10.875 8.25023 10.875C8.15077 10.875 8.05539 10.8355 7.98506 10.7652C7.91474 10.6948 7.87523 10.5995 7.87523 10.5C7.87523 10.4005 7.91474 10.3052 7.98506 10.2348C8.05539 10.1645 8.15077 10.125 8.25023 10.125C8.34969 10.125 8.44507 10.1645 8.51539 10.2348C8.58572 10.3052 8.62523 10.4005 8.62523 10.5ZM16.1252 10.5C16.1252 10.5995 16.0857 10.6948 16.0154 10.7652C15.9451 10.8355 15.8497 10.875 15.7502 10.875C15.6508 10.875 15.5554 10.8355 15.4851 10.7652C15.4147 10.6948 15.3752 10.5995 15.3752 10.5C15.3752 10.4005 15.4147 10.3052 15.4851 10.2348C15.5554 10.1645 15.6508 10.125 15.7502 10.125C15.8497 10.125 15.9451 10.1645 16.0154 10.2348C16.0857 10.3052 16.1252 10.4005 16.1252 10.5Z\" stroke=\"#D75951\" stroke-width=\"1.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n</svg>",
+            "my_block_text_2": "<p><strong>Exchange Policy</strong><br/>Free 7 days Delivery Return. <a href=\"/policies/refund-policy\" title=\"Refund Policy\">Details</a></p>",
+            "svg_icon_code_3": "",
+            "my_block_text_3": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "judge_me_reviews_preview_badge_97EjVf",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "collapsible_tab_zfr8HB",
+        "iconwithtext_BMfwC4"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-4d786101-e938-4a9f-8db3-1b0a9cf5f8f5",
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "hide",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "rich_text_ehGrtR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3AfA7C": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<strong>Description</strong>",
+            "heading_size": "h2"
+          }
+        },
+        "text_WhLcce": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "custom_liquid": "{{ product.description }}"
+          }
+        },
+        "image_mbUPxK": {
+          "type": "image",
+          "settings": {
+            "image": "{{ product.metafields.custom.bottom_banner.value }}"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3AfA7C",
+        "text_WhLcce",
+        "image_mbUPxK"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "scheme-4d786101-e938-4a9f-8db3-1b0a9cf5f8f5",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "<strong>You may also like</strong>",
+        "heading_size": "h2",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-4d786101-e938-4a9f-8db3-1b0a9cf5f8f5",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "174841919918dc1a86": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_KJ3Jgr": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_KJ3Jgr"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "testimonials_dAzVML": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_MNDXWA": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>It’s fancy, beautiful design, and fits perfectly. I haven’t taken it off since I got it.</p>",
+            "image": "shopify://shop_images/beautiful-woman-purple-sweater-skirt.png",
+            "author": "Ananya R.",
+            "rating": "<p>20 days ago</p>"
+          }
+        },
+        "testimonial_HnLYV9": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>The chain sits perfectly, and I love the softness of the design. Elegant</p>",
+            "image": "shopify://shop_images/image_15.png",
+            "author": "Nandita V.",
+            "rating": "<p>42 days ago</p>"
+          }
+        },
+        "testimonial_xiLExe": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>Looks delicate but feels strong. It’s now my go-to piece for every outfit.</p>",
+            "image": "shopify://shop_images/image_17.png",
+            "author": "Aarti J.",
+            "rating": "<p>15 days ago</p>"
+          }
+        },
+        "testimonial_rGMmfa": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>I wore them all day and completely forgot I had them on — that’s how light they are!</p>",
+            "image": "shopify://shop_images/image_18.png",
+            "author": "Pooja V.",
+            "rating": "<p>27 days ago</p>"
+          }
+        },
+        "testimonial_ExCTqR": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>Love how simple it is but still makes a statement. Feels like it was made just for me</p>",
+            "image": "shopify://shop_images/image_16.png",
+            "author": "Tanya M.",
+            "rating": "<p>30 days ago</p>"
+          }
+        },
+        "testimonial_b6RrPw": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>Looks minimal but feels so meaningful. I get compliments every time I wear it.</p>",
+            "image": "shopify://shop_images/image_19.png",
+            "author": "Ishita L.",
+            "rating": "<p>45 days ago</p>"
+          }
+        },
+        "testimonial_XDYnKN": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>I’ve been wearing it daily. It’s light, elegant, and works with everything I wear.</p>",
+            "image": "shopify://shop_images/woman-smiling-looking-away.png",
+            "author": "Shalini B.",
+            "rating": "<p>10 days ago</p>"
+          }
+        },
+        "testimonial_gpr6X3": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>They outshine my outfits every time. I love how quietly beautiful they are.</p>",
+            "image": "shopify://shop_images/image_14.png",
+            "author": "Sonali M.",
+            "rating": "<p>34 days ago</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_MNDXWA",
+        "testimonial_HnLYV9",
+        "testimonial_xiLExe",
+        "testimonial_rGMmfa",
+        "testimonial_ExCTqR",
+        "testimonial_b6RrPw",
+        "testimonial_XDYnKN",
+        "testimonial_gpr6X3"
+      ],
+      "custom_css": [
+        ".my-featured-title h2.title {font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "What Our Happy Customers Are Saying",
+        "heading_size": "h2",
+        "content": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "latest_multicolumn_bhYHxw": {
+      "type": "latest-multicolumn",
+      "blocks": {
+        "column_rpFNga": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/delivery-green.svg",
+            "title": "Delivery",
+            "text": "<p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Hw4jex": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/support-green.svg",
+            "title": "Customer Support",
+            "text": "<p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hf8FJN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/payment-green.svg",
+            "title": "Payment security",
+            "text": "<p>Ea esse elit anim commodo laborum pariatur nisi. Voluptate elit d</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rpFNga",
+        "column_Hw4jex",
+        "column_hf8FJN"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "button_label": "",
+        "button_link": "",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "color_scheme": "scheme-4",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "new_logo_list_zKeE9f": {
+      "type": "new-logo-list",
+      "blocks": {
+        "logo_image_MNGknY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_164.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_3XH3PC": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti6791_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_ci8yNC": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_166.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_8BCy63": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7743_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_HLknyY": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_164.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_ktLJQU": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7433.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_JQa84R": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7578.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_6ia8tM": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7466.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_7YMkGJ": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7549.png",
+            "logo_title": "",
+            "link": ""
+          }
+        },
+        "logo_image_aFLTHg": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/bharti7709_1.png",
+            "logo_title": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_image_MNGknY",
+        "logo_image_3XH3PC",
+        "logo_image_ci8yNC",
+        "logo_image_8BCy63",
+        "logo_image_HLknyY",
+        "logo_image_ktLJQU",
+        "logo_image_JQa84R",
+        "logo_image_6ia8tM",
+        "logo_image_7YMkGJ",
+        "logo_image_aFLTHg"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "title": "Spotlight on Style",
+        "logo_width": "175px"
+      }
+    },
+    "17484225703f4fd543": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_XaJeXM": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_XaJeXM"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_YLjzCh",
+    "main",
+    "rich_text_ehGrtR",
+    "related-products",
+    "174841919918dc1a86",
+    "testimonials_dAzVML",
+    "latest_multicolumn_bhYHxw",
+    "new_logo_list_zKeE9f",
+    "17484225703f4fd543"
+  ]
+}

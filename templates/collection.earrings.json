@@ -1,0 +1,223 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow_G7VzYt": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_ctYHPP": {
+          "type": "slide",
+          "settings": {
+            "hero_video": "",
+            "image": "shopify://shop_images/pabeena_banners-04.jpg",
+            "mobile_image": "shopify://shop_images/mobile_banners-08.jpg",
+            "heading": "",
+            "heading_size": "hxxl",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-3",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_ctYHPP"
+      ],
+      "custom_css": [
+        "h2.banner__heading.inline-richtext {font-weight: 600;}",
+        ".my-slick-slideshow ul.slick-dots {display: none;}"
+      ],
+      "settings": {
+        "custom_class": "luxury-collection-header",
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "custom_text": "Find Your Shine in Every Collection",
+        "show_collection_description": false,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "sub_collections_FJiG8P": {
+      "type": "sub-collections",
+      "disabled": true,
+      "name": "Sub Collections",
+      "settings": {
+        "menu": "main-menu",
+        "per_row": 5,
+        "columns_mobile": "2",
+        "horizontal_on_mobile": true,
+        "grid_image": "collection",
+        "image_ratio": "adapt",
+        "image_position": "center center",
+        "apply_overlay": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "standard",
+        "enable_filtering": true,
+        "filter_type": "drawer",
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "testimonials_wnThkh": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_yG4icU": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>It’s fancy, beautiful design, and fits perfectly. I haven’t taken it off since I got it.</p>",
+            "image": "shopify://shop_images/beautiful-woman-purple-sweater-skirt.png",
+            "author": "Ananya R.",
+            "rating": "<p>20 days ago</p>"
+          }
+        },
+        "testimonial_hUhbKn": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>The chain sits perfectly, and I love the softness of the design. Elegant</p>",
+            "image": "shopify://shop_images/image_15.png",
+            "author": "Nandita V.",
+            "rating": "<p>42 days ago</p>"
+          }
+        },
+        "testimonial_TG9dYj": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>Looks delicate but feels strong. It’s now my go-to piece for every outfit.</p>",
+            "image": "shopify://shop_images/image_17.png",
+            "author": "Aarti J.",
+            "rating": "<p>15 days ago</p>"
+          }
+        },
+        "testimonial_b7RNQg": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>I wore them all day and completely forgot I had them on — that’s how light they are!</p>",
+            "image": "shopify://shop_images/image_18.png",
+            "author": "Pooja V.",
+            "rating": "<p>27 days ago</p>"
+          }
+        },
+        "testimonial_wHidQK": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/Untitled_Session8409_2.png",
+            "title": "",
+            "content": "<p>Love how simple it is but still makes a statement. Feels like it was made just for me</p>",
+            "image": "shopify://shop_images/image_16.png",
+            "author": "Tanya M.",
+            "rating": "<p>30 days ago</p>"
+          }
+        },
+        "testimonial_iecCBf": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7709_2.png",
+            "title": "",
+            "content": "<p>Looks minimal but feels so meaningful. I get compliments every time I wear it.</p>",
+            "image": "shopify://shop_images/image_19.png",
+            "author": "Ishita L.",
+            "rating": "<p>45 days ago</p>"
+          }
+        },
+        "testimonial_aNMY6T": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7470.png",
+            "title": "",
+            "content": "<p>I’ve been wearing it daily. It’s light, elegant, and works with everything I wear.</p>",
+            "image": "shopify://shop_images/woman-smiling-looking-away.png",
+            "author": "Shalini B.",
+            "rating": "<p>10 days ago</p>"
+          }
+        },
+        "testimonial_PGqF4M": {
+          "type": "testimonial",
+          "settings": {
+            "product_image": "shopify://shop_images/bharti7549_1_e1d7fd20-d02f-4571-adb8-2d7f8890ded5.png",
+            "title": "",
+            "content": "<p>They outshine my outfits every time. I love how quietly beautiful they are.</p>",
+            "image": "shopify://shop_images/image_14.png",
+            "author": "Sonali M.",
+            "rating": "<p>34 days ago</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_yG4icU",
+        "testimonial_hUhbKn",
+        "testimonial_TG9dYj",
+        "testimonial_b7RNQg",
+        "testimonial_wHidQK",
+        "testimonial_iecCBf",
+        "testimonial_aNMY6T",
+        "testimonial_PGqF4M"
+      ],
+      "custom_css": [
+        ".my-featured-title h2.title {font-weight: 600;}"
+      ],
+      "settings": {
+        "title": "What Our Happy Customers Are Saying",
+        "heading_size": "h2",
+        "content": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "slideshow_G7VzYt",
+    "banner",
+    "sub_collections_FJiG8P",
+    "product-grid",
+    "testimonials_wnThkh"
+  ]
+}
