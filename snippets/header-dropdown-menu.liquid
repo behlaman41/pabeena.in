@@ -112,68 +112,79 @@
       {%- comment -%}
         Inject the custom "Everyday Collection" dropdown right after the first
         top-level item (typically "Home") so it appears beside Home.
+        Only add it if there isn't already an "Everyday Collection" in the main menu.
       {%- endcomment -%}
       {%- if forloop.first and section.settings.show_everyday_menu -%}
-        <li>
-          <header-menu>
-            <details id="Details-EverydayMenu" class="lev-1">
-              <summary
-                id="HeaderMenu-everyday-collection"
-                class="header__menu-item list-menu__item link focus-inset"
-              >
-                <span>
-                  <a href="#" class="inner-link-details-tab-menu header__menu-item list-menu__item link link--text focus-inset">
-                    Everyday Collection
-                  </a>
-                </span>
-                {{- 'icon-caret.svg' | inline_asset_content -}}
-              </summary>
-              <ul
-                id="HeaderMenu-EverydayMenuList"
-                class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup"
-                role="list"
-                tabindex="-1"
-              >
-                <li>
-                  <a
-                    id="HeaderMenu-everyday-earrings"
-                    href="/collections/everyday-earrings"
-                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
-                  >
-                    Earrings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="HeaderMenu-everyday-necklaces"
-                    href="/collections/everyday-necklaces"
-                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
-                  >
-                    Necklaces
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="HeaderMenu-everyday-rings"
-                    href="/collections/everyday-rings"
-                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
-                  >
-                    Rings
-                  </a>
-                </li>
-                <li>
-                  <a
-                    id="HeaderMenu-everyday-bracelets"
-                    href="/collections/everyday-bracelets"
-                    class="header__menu-item list-menu__item link link--text focus-inset caption-large"
-                  >
-                    Bracelets
-                  </a>
-                </li>
-              </ul>
-            </details>
-          </header-menu>
-        </li>
+        {%- assign has_everyday_in_menu = false -%}
+        {%- for menu_link in section.settings.menu.links -%}
+          {%- if menu_link.title == 'Everyday Collection' -%}
+            {%- assign has_everyday_in_menu = true -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        
+        {%- unless has_everyday_in_menu -%}
+          <li>
+            <header-menu>
+              <details id="Details-EverydayMenu" class="lev-1">
+                <summary
+                  id="HeaderMenu-everyday-collection"
+                  class="header__menu-item list-menu__item link focus-inset"
+                >
+                  <span>
+                    <a href="#" class="inner-link-details-tab-menu header__menu-item list-menu__item link link--text focus-inset">
+                      Everyday Collection
+                    </a>
+                  </span>
+                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                </summary>
+                <ul
+                  id="HeaderMenu-EverydayMenuList"
+                  class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup"
+                  role="list"
+                  tabindex="-1"
+                >
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-earrings"
+                      href="/collections/everyday-earrings"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Earrings
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-necklaces"
+                      href="/collections/everyday-necklaces"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Necklaces
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-rings"
+                      href="/collections/everyday-rings"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Rings
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-bracelets"
+                      href="/collections/everyday-bracelets"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Bracelets
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </header-menu>
+          </li>
+        {%- endunless -%}
       {%- endif -%}
     {%- endfor -%}
   </ul>
