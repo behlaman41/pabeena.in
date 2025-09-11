@@ -98,6 +98,64 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  /* Everyday Collection Dropdown Styles */
+  .everyday-collection-menu {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .everyday-collection-menu .list-menu--inline {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 989px) {
+    .everyday-collection-menu {
+      display: none;
+    }
+  }
+
+  .everyday-collection-menu .header__submenu {
+    min-width: 200px;
+    z-index: 999;
+  }
+
+  /* Fix nav spacing */
+  .header__inline-menu + .everyday-collection-menu {
+    margin-left: 1.5rem;
+  }
+
+  /* Ensure both menus are on same line */
+  .header--middle-left .header__inline-menu,
+  .header--middle-left .everyday-collection-menu {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  /* Navigation wrapper to contain both menus */
+  .header__navigation-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+  }
+
+  .header__navigation-wrapper .header__inline-menu {
+    flex-shrink: 0;
+  }
+
+  .header__navigation-wrapper .everyday-collection-menu {
+    flex-shrink: 0;
+    margin-left: 0;
+  }
+
+  /* Adjust for smaller screens */
+  @media screen and (max-width: 1200px) {
+    .header__navigation-wrapper {
+      gap: 1rem;
+    }
+  }
 {%- endstyle -%}
 
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -181,15 +239,81 @@ id="sticky-header"
       {%- endif -%}
     {%- endif -%}
 
-    {%- liquid
-      if section.settings.menu != blank
-        if section.settings.menu_type_desktop == 'dropdown'
-          render 'header-dropdown-menu'
-        elsif section.settings.menu_type_desktop != 'drawer'
-          render 'header-mega-menu'
+    <div class="header__navigation-wrapper">
+      {%- liquid
+        if section.settings.menu != blank
+          if section.settings.menu_type_desktop == 'dropdown'
+            render 'header-dropdown-menu'
+          elsif section.settings.menu_type_desktop != 'drawer'
+            render 'header-mega-menu'
+          endif
         endif
-      endif
-    %}
+      %}
+
+      {%- comment -%} Everyday Collection Dropdown Menu {%- endcomment -%}
+      {%- if section.settings.show_everyday_menu -%}
+        <nav class="header__inline-menu everyday-collection-menu">
+        <ul class="list-menu list-menu--inline" role="list">
+          <li>
+            <header-menu>
+              <details id="Details-EverydayMenu" class="lev-1">
+                <summary
+                  id="HeaderMenu-everyday-collection"
+                  class="header__menu-item list-menu__item link focus-inset"
+                >
+                  <span>Everyday Collection</span>
+                  {{- 'icon-caret.svg' | inline_asset_content -}}
+                </summary>
+                <ul
+                  id="HeaderMenu-EverydayMenuList"
+                  class="header__submenu list-menu list-menu--disclosure color-{{ section.settings.menu_color_scheme }} gradient caption-large motion-reduce global-settings-popup"
+                  role="list"
+                  tabindex="-1"
+                >
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-earrings"
+                      href="/collections/everyday-earrings"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Earrings
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-necklaces"
+                      href="/collections/everyday-necklaces"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Necklaces
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-rings"
+                      href="/collections/everyday-rings"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Rings
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      id="HeaderMenu-everyday-bracelets"
+                      href="/collections/everyday-bracelets"
+                      class="header__menu-item list-menu__item link link--text focus-inset caption-large"
+                    >
+                      Bracelets
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </header-menu>
+          </li>
+        </ul>
+      </nav>
+    {%- endif -%}
+    </div>
 
     {%- if section.settings.logo_position == 'middle-center' -%}
       {%- if request.page_type == 'index' -%}
@@ -604,6 +728,13 @@ id="sticky-header"
       "id": "menu",
       "default": "main-menu",
       "label": "t:sections.header.settings.menu.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_everyday_menu",
+      "label": "Show Everyday Collection Menu",
+      "default": true,
+      "info": "Display the Everyday Collection dropdown in the header"
     },
     {
       "type": "select",
