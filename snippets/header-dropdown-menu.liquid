@@ -8,6 +8,14 @@
 <nav class="header__inline-menu">
   <ul class="list-menu list-menu--inline" role="list">
     {%- for link in section.settings.menu.links -%}
+      {%- comment -%}
+        Skip the top-level "Everyday Collection" item from the main menu
+        when the custom Everyday dropdown is enabled, to avoid duplicates.
+      {%- endcomment -%}
+      {%- assign _title_normalized = link.title | strip | downcase -%}
+      {%- if section.settings.show_everyday_menu and _title_normalized == 'everyday collection' -%}
+        {%- continue -%}
+      {%- endif -%}
       <li>
         {%- if link.links != blank -%}
           <header-menu>

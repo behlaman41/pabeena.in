@@ -22,6 +22,15 @@
           <nav class="menu-drawer__navigation">
             <ul class="menu-drawer__menu has-submenu list-menu" role="list">
               {%- for link in section.settings.menu.links -%}
+                {%- comment -%}
+                  Hide the top-level "Everyday Collection" link from the main
+                  menu list when the custom Everyday dropdown is enabled to
+                  prevent duplicates in the drawer.
+                {%- endcomment -%}
+                {%- assign _title_normalized = link.title | strip | downcase -%}
+                {%- if section.settings.show_everyday_menu and _title_normalized == 'everyday collection' -%}
+                  {%- continue -%}
+                {%- endif -%}
                 <li>
                   {%- if link.links != blank -%}
                     <details id="Details-menu-drawer-menu-item-{{ forloop.index }}">
