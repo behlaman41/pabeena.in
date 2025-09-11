@@ -1,0 +1,24 @@
+{%- comment -%}
+  Returns 'true' when a product should be hidden by tag, based on theme settings.
+  Usage examples:
+    {% capture should_hide %}{% render 'visibility-filter', product: product %}{% endcapture %}
+    {% if should_hide == 'true' %}{% continue %}{% endif %}
+
+  Settings used:
+    - settings.enable_exclude_tag (boolean)
+    - settings.exclude_tag (string)
+{%- endcomment -%}
+
+{%- assign should_hide = false -%}
+{%- assign enabled = settings.enable_exclude_tag -%}
+{%- assign hidden_tag = settings.exclude_tag | strip | downcase -%}
+
+{%- if enabled and hidden_tag != blank and product and product.tags -%}
+  {%- assign tags_down = product.tags | join: '|' | downcase -%}
+  {%- if tags_down contains hidden_tag -%}
+    {%- assign should_hide = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- render 'return', value: should_hide -%}
+

@@ -1,0 +1,6 @@
+{%- comment -%}
+  Provides a minimal "return value" helper for snippets.
+  It simply outputs the provided `value` so callers can capture it.
+{%- endcomment -%}
+{%- if value != nil -%}{{ value }}{%- endif -%}
+

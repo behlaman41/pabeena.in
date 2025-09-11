@@ -598,6 +598,8 @@
                                     limit: block.settings.products_per_page
                                     offset: continue
                                   -%}
+                                    {%- capture should_hide -%}{% render 'visibility-filter', product: product %}{%- endcapture -%}
+                                    {%- if should_hide == 'true' -%}{% continue %}{%- endif -%}
                                     <li>
                                       {%- if block.settings.enable_quick_add -%}
                                         {% assign quick_add = 'standard' %}

@@ -1446,9 +1446,27 @@
       },
       {
         "type": "color_scheme",
-        "id": "cart_color_scheme",
-        "label": "t:sections.all.colors.label",
-        "default": "scheme-1"
+      "id": "cart_color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    }
+  ]
+  },
+  {
+    "name": "Visibility",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_exclude_tag",
+        "label": "Hide products with a specific tag (LIVE theme only)",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "exclude_tag",
+        "label": "Tag to hide (case-insensitive)",
+        "default": "preview-only",
+        "info": "Products with this tag will be hidden when the toggle above is enabled."
       }
     ]
   }
