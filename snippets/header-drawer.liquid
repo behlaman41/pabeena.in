@@ -38,7 +38,13 @@
                         id="HeaderDrawer-{{ link.handle }}"
                         class="menu-drawer__menu-item list-menu__item link link--text focus-inset{% if link.child_active %} menu-drawer__menu-item--active{% endif %}"
                       >
-                        {{ link.title | escape }}
+                        {%- if link.title == 'Shop By Category' -%}
+                          Ethnic Collection
+                        {%- elsif link.title == 'Luxury' -%}
+                          Maharani Edit
+                        {%- else -%}
+                          {{ link.title | escape }}
+                        {%- endif -%}
                         <span class="svg-wrapper">
                           {{- 'icon-arrow.svg' | inline_asset_content -}}
                         </span>
@@ -56,7 +62,13 @@
                             <span class="svg-wrapper">
                               {{- 'icon-arrow.svg' | inline_asset_content -}}
                             </span>
-                            {{ link.title | escape }}
+                            {%- if link.title == 'Shop By Category' -%}
+                              Ethnic Collection
+                            {%- elsif link.title == 'Luxury' -%}
+                              Maharani Edit
+                            {%- else -%}
+                              {{ link.title | escape }}
+                            {%- endif -%}
                           </button>
                           <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
                             {%- for childlink in link.links -%}
@@ -137,82 +149,103 @@
                         aria-current="page"
                       {% endif %}
                     >
-                      {{ link.title | escape }}
+                      {%- if link.title == 'Shop By Category' -%}
+                        Ethnic Collection
+                      {%- elsif link.title == 'Luxury' -%}
+                        Maharani Edit
+                      {%- else -%}
+                        {{ link.title | escape }}
+                      {%- endif -%}
                     </a>
                   {%- endif -%}
                 </li>
-              {%- endfor -%}
-              {%- comment -%} Everyday Collection Menu in Mobile Drawer {%- endcomment -%}
-              {%- if section.settings.show_everyday_menu -%}
-                <li>
-                  <details id="Details-menu-drawer-everyday-collection">
-                    <summary
-                      id="HeaderDrawer-everyday-collection"
-                      class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
-                    >
-                      Everyday Collection
-                      <span class="svg-wrapper">
-                        {{- 'icon-arrow.svg' | inline_asset_content -}}
-                      </span>
-                      <span class="svg-wrapper">
-                        {{- 'icon-caret.svg' | inline_asset_content -}}
-                      </span>
-                    </summary>
-                    <div
-                      id="link-everyday-collection"
-                      class="menu-drawer__submenu has-submenu gradient motion-reduce"
-                      tabindex="-1"
-                    >
-                      <div class="menu-drawer__inner-submenu">
-                        <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+
+                {%- comment -%}
+                  Insert the custom Everyday Collection dropdown right after the first
+                  top-level item to match desktop ordering. Avoid duplication if
+                  the admin menu already has an Everyday Collection item.
+                {%- endcomment -%}
+                {%- if forloop.first and section.settings.show_everyday_menu -%}
+                  {%- assign has_everyday_in_menu = false -%}
+                  {%- for menu_link in section.settings.menu.links -%}
+                    {%- if menu_link.title == 'Everyday Collection' -%}
+                      {%- assign has_everyday_in_menu = true -%}
+                      {%- break -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {%- unless has_everyday_in_menu -%}
+                    <li>
+                      <details id="Details-menu-drawer-everyday-collection">
+                        <summary
+                          id="HeaderDrawer-everyday-collection"
+                          class="menu-drawer__menu-item list-menu__item link link--text focus-inset"
+                        >
+                          Everyday Collection
                           <span class="svg-wrapper">
                             {{- 'icon-arrow.svg' | inline_asset_content -}}
                           </span>
-                          Everyday Collection
-                        </button>
-                        <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
-                          <li>
-                            <a
-                              id="HeaderDrawer-everyday-earrings"
-                              href="/collections/everyday-earrings"
-                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
-                            >
-                              Earrings
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              id="HeaderDrawer-everyday-necklaces"
-                              href="/collections/everyday-necklaces"
-                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
-                            >
-                              Necklaces
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              id="HeaderDrawer-everyday-rings"
-                              href="/collections/everyday-rings"
-                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
-                            >
-                              Rings
-                            </a>
-                          </li>
-                          <li>
-                            <a
-                              id="HeaderDrawer-everyday-bracelets"
-                              href="/collections/everyday-bracelets"
-                              class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
-                            >
-                              Bracelets
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </details>
-                </li>
-              {%- endif -%}
+                          <span class="svg-wrapper">
+                            {{- 'icon-caret.svg' | inline_asset_content -}}
+                          </span>
+                        </summary>
+                        <div
+                          id="link-everyday-collection"
+                          class="menu-drawer__submenu has-submenu gradient motion-reduce"
+                          tabindex="-1"
+                        >
+                          <div class="menu-drawer__inner-submenu">
+                            <button class="menu-drawer__close-button link link--text focus-inset" aria-expanded="true">
+                              <span class="svg-wrapper">
+                                {{- 'icon-arrow.svg' | inline_asset_content -}}
+                              </span>
+                              Everyday Collection
+                            </button>
+                            <ul class="menu-drawer__menu list-menu" role="list" tabindex="-1">
+                              <li>
+                                <a
+                                  id="HeaderDrawer-everyday-earrings"
+                                  href="/collections/everyday-earrings"
+                                  class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
+                                >
+                                  Earrings
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  id="HeaderDrawer-everyday-necklaces"
+                                  href="/collections/everyday-necklaces"
+                                  class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
+                                >
+                                  Necklaces
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  id="HeaderDrawer-everyday-rings"
+                                  href="/collections/everyday-rings"
+                                  class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
+                                >
+                                  Rings
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  id="HeaderDrawer-everyday-bracelets"
+                                  href="/collections/everyday-bracelets"
+                                  class="menu-drawer__menu-item link link--text list-menu__item focus-inset"
+                                >
+                                  Bracelets
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </details>
+                    </li>
+                  {%- endunless -%}
+                {%- endif -%}
+              {%- endfor -%}
+
             </ul>
           </nav>
           <div class="menu-drawer__utility-links">
