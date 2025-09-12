@@ -30,17 +30,24 @@
         {% for collection in collections %}
           {% assign this_collection_handle = collection.handle %}
           {% if collection_handle contains 'luxury' %}
-            {% if this_collection_handle contains 'luxury-' %}
+            {%- comment -%} On a luxury collection: show only luxury collections {%- endcomment -%}
+            {% if this_collection_handle contains 'luxury' %}
               <a href="{{ collection.url }}" {% if collection_handle == this_collection_handle %} class="collection_actv"{% endif %}>{{ collection.title }}</a>
             {% endif %}
+          {% elsif collection_handle contains 'everyday' %}
+            {%- comment -%} On an everyday collection: show only everyday collections {%- endcomment -%}
+            {% if this_collection_handle contains 'everyday' %}
+              {% unless this_collection_handle contains 'luxury' %}
+                <a href="{{ collection.url }}" {% if collection_handle == this_collection_handle %} class="collection_actv"{% endif %}>{{ collection.title }}</a>
+              {% endunless %}
+            {% endif %}
           {% else %}
-            {% if this_collection_handle contains 'luxury' %}
-              {% else %}
-           <a href="{{ collection.url }}" {% if collection_handle == this_collection_handle %} class="collection_actv"{% endif %}>{{ collection.title }}</a>
-              {% endif %}
+            {%- comment -%} On standard (non-luxury, non-everyday): exclude luxury and everyday collections {%- endcomment -%}
+            {% unless this_collection_handle contains 'luxury' or this_collection_handle contains 'everyday' %}
+              <a href="{{ collection.url }}" {% if collection_handle == this_collection_handle %} class="collection_actv"{% endif %}>{{ collection.title }}</a>
+            {% endunless %}
           {% endif %}
-
-          {% endfor %}
+        {% endfor %}
       </div>
     </div>
 
