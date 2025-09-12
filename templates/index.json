@@ -13,8 +13,8 @@
       "type": "homepage-slider",
       "name": "Homepage Slider Banner",
       "settings": {
-        "slide1_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-04.jpg",
-        "slide1_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-07.jpg",
+        "slide1_desktop": "shopify://shop_images/PC_Website_Banner_07.jpg",
+        "slide1_mobile": "shopify://shop_images/Phone_Website_Banner_07.jpg",
         "link1": "https://www.pabeena.in/collections/necklaces",
         "slide2_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-11.jpg",
         "slide2_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-06.jpg",
