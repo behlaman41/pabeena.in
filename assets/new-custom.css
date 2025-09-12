@@ -33,6 +33,19 @@ nav.header__inline-menu {
     /* background: #00000040; */
     border-radius: 10px 0 0 10px;
 }
+
+/* Mobile navigation + overflow fixes */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+@media screen and (max-width: 989px) {
+    /* Hide desktop inline nav on mobile to use drawer */
+    nav.header__inline-menu,
+    .header__navigation-wrapper {
+        display: none !important;
+    }
+}
 header.header.header--middle-left {
         column-gap: 0;
 }
