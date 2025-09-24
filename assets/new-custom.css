@@ -476,6 +476,17 @@ ul.product-grid {
     --grid-mobile-vertical-spacing: 1rem;
     --grid-mobile-horizontal-spacing: 1rem;
 }
+ul.product-grid:not(.landscape-card) li.grid__item .card__inner.ratio {
+    /* Force a consistent portrait ratio so every product thumbnail fills its frame */
+    --ratio-percent: 133% !important;
+    aspect-ratio: 3 / 4;
+}
+ul.product-grid:not(.landscape-card) li.grid__item .card__media .media img,
+ul.product-grid:not(.landscape-card) li.grid__item .card__media .media .motion-reduce {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
 ul.product-grid li.grid__item .card--standard>.card__content .card__information {
     padding: 0;
 }
