@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_En": {
@@ -7,8 +16,8 @@
           "type": "slide",
           "settings": {
             "hero_video": "",
-            "image": "",
-            "mobile_image": "",
+            "image": "shopify://shop_images/Necklace_Banner_PC_d82de6e5-0c1f-4431-ae1d-5725230d2031.jpg",
+            "mobile_image": "shopify://shop_images/Necklace_Banner_Phone_4cfef313-3067-4140-a2b7-d09622a6690c.jpg",
             "heading": "",
             "heading_size": "hxxl",
             "subheading": "",

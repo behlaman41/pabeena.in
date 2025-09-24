@@ -13,11 +13,11 @@
       "type": "homepage-slider",
       "name": "Homepage Slider Banner",
       "settings": {
-        "slide1_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-04.jpg",
-        "slide1_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-07.jpg",
+        "slide1_desktop": "shopify://shop_images/PC_Website_Banner_07.jpg",
+        "slide1_mobile": "shopify://shop_images/Phone_Website_Banner_07.jpg",
         "link1": "https://www.pabeena.in/collections/necklaces",
-        "slide2_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-11.jpg",
-        "slide2_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-06.jpg",
+        "slide2_desktop": "shopify://shop_images/PC_Website_Banner_04.jpg",
+        "slide2_mobile": "shopify://shop_images/Phone_Website_Banner_04.jpg",
         "link2": "https://www.pabeena.in/collections/luxury-necklaces",
         "slide3_desktop": "shopify://shop_images/Desktop_Mobile_Website_Banner-09.jpg",
         "slide3_mobile": "shopify://shop_images/Desktop_Mobile_Website_Banner-05.jpg",
@@ -309,48 +309,30 @@
     "logo_list_FyVwnE": {
       "type": "logo-list",
       "blocks": {
-        "logo_image_4mUFdE": {
+        "logo_image_everyday": {
+          "type": "logo_image",
+          "settings": {
+            "image": "shopify://shop_images/amora-studs-09.png",
+            "logo_title": "Everyday Collection",
+            "link": "shopify://collections/everyday-necklaces"
+          }
+        },
+        "logo_image_ethnic": {
           "type": "logo_image",
           "settings": {
             "image": "shopify://shop_images/Untitled_Session8374_1.png",
-            "logo_title": "Necklaces",
+            "logo_title": "Ethnic Collection",
             "link": "shopify://collections/necklaces"
-          }
-        },
-        "logo_image_dr8rKa": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_Session8531_1.png",
-            "logo_title": "Earrings",
-            "link": "shopify://collections/earrings"
-          }
-        },
-        "logo_image_aVBL9n": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_Session8267_1.png",
-            "logo_title": "Bangles",
-            "link": "shopify://collections/bangles"
-          }
-        },
-        "logo_image_9CUHQW": {
-          "type": "logo_image",
-          "settings": {
-            "image": "shopify://shop_images/Untitled_Session8413_1.png",
-            "logo_title": "Rings",
-            "link": "shopify://collections/rings"
           }
         }
       },
       "block_order": [
-        "logo_image_4mUFdE",
-        "logo_image_dr8rKa",
-        "logo_image_aVBL9n",
-        "logo_image_9CUHQW"
+        "logo_image_everyday",
+        "logo_image_ethnic"
       ],
       "settings": {
         "color_scheme": "",
-        "title": "Discover our collection",
+        "title": "Discover our collections",
         "description": "<p>A perfect blend of tradition, elegance, and timeless craftsmanship</p>",
         "logo_width": "160px"
       }
@@ -519,7 +501,7 @@
       "type": "new-card-slider",
       "name": "New Card Slider",
       "settings": {
-        "custom_liquid": "<p><strong>Luxury Jewellery</strong></p>",
+        "custom_liquid": "<p><strong>Maharani Edit</strong></p>",
         "collection": "luxury",
         "products_to_show": 25,
         "title": "",
@@ -776,9 +758,9 @@
       ],
       "name": "t:sections.featured-collection.presets.name",
       "settings": {
-        "collection": "bangles",
+        "collection": "everyday-bracelets",
         "products_to_show": 25,
-        "title": "Top selling product",
+        "title": "Everyday Collection",
         "heading_size": "h2",
         "description": "",
         "show_description": false,

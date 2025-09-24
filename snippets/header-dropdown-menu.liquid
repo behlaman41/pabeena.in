@@ -32,6 +32,8 @@
                   <a href="{{ link.url }}" class="inner-link-details-tab-menu header__menu-item list-menu__item link link--text focus-inset">
                   {%- if link.title == 'Shop By Category' -%}
                     Ethnic Collection
+                  {%- elsif link.title == 'Luxury' -%}
+                    Maharani Edit
                   {%- else -%}
                     {{- link.title | escape -}}
                   {%- endif -%}
@@ -109,6 +111,8 @@
             >
               {%- if link.title == 'Shop By Category' -%}
                 Ethnic Collection
+              {%- elsif link.title == 'Luxury' -%}
+                Maharani Edit
               {%- else -%}
                 {{- link.title | escape -}}
               {%- endif -%}
